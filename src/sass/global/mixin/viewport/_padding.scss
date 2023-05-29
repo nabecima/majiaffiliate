@@ -1,0 +1,33 @@
+@use "./base" as *;
+
+// padding-top
+@mixin pt_vw($size, $viewport, $min: 0) {
+  padding-top: clamp(#{$min}px, #{get_vw($size, $viewport)}, #{$size}px);
+}
+
+// padding-bottom
+@mixin pb_vw($size, $viewport, $min: 0) {
+  padding-bottom: clamp(#{$min}px, #{get_vw($size, $viewport)}, #{$size}px);
+}
+
+// padding-left
+@mixin pl_vw($size, $viewport, $min: 0) {
+  padding-left: clamp(#{$min}px, #{get_vw($size, $viewport)}, #{$size}px);
+}
+
+// padding-right
+@mixin pr_vw($size, $viewport, $min: 0) {
+  padding-right: clamp(#{$min}px, #{get_vw($size, $viewport)}, #{$size}px);
+}
+
+// padding(horizontal)
+@mixin px_vw($size, $viewport, $min: 0) {
+  padding-left: clamp(#{$min}px, #{get_vw($size, $viewport)}, #{$size}px);
+  padding-right: clamp(#{$min}px, #{get_vw($size, $viewport)}, #{$size}px);
+}
+
+// padding(vertical)
+@mixin py_vw($size, $viewport, $min: 0) {
+  padding-top: clamp(#{$min}px, #{get_vw($size, $viewport)}, #{$size}px);
+  padding-bottom: clamp(#{$min}px, #{get_vw($size, $viewport)}, #{$size}px);
+}

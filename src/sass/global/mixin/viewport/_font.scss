@@ -1,0 +1,6 @@
+@use "./base" as *;
+
+// font-size
+@mixin f_vw($size, $viewport, $min: 0) {
+  font-size: clamp(#{$min}px, #{get_vw($size, $viewport)}, #{$size}px);
+}

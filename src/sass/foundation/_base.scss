@@ -1,0 +1,25 @@
+@use "../global" as g;
+
+// @include g.font-face("フォント名", "../fonts/ファイル名", weight, style);
+// @include g.font-face("Poppins", "../fonts/Poppins-Regular.woff2", 400, normal);
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+}
+
+picture {
+  display: block;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+a {
+  display: inline-block;
+}

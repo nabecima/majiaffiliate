@@ -1,0 +1,21 @@
+@use "./base" as *;
+
+// margin-top
+@mixin mt_vw($size, $viewport, $min: 0) {
+  margin-top: clamp(#{$min}px, #{get_vw($size, $viewport)}, #{$size}px);
+}
+
+// margin-bottom
+@mixin mb_vw($size, $viewport, $min: 0) {
+  margin-bottom: clamp(#{$min}px, #{get_vw($size, $viewport)}, #{$size}px);
+}
+
+// margin-left
+@mixin ml_vw($size, $viewport, $min: 0) {
+  margin-left: clamp(#{$min}px, #{get_vw($size, $viewport)}, #{$size}px);
+}
+
+// margin-right
+@mixin mr_vw($size, $viewport, $min: 0) {
+  margin-right: clamp(#{$min}px, #{get_vw($size, $viewport)}, #{$size}px);
+}

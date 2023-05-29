@@ -1,0 +1,11 @@
+@use './base' as *;
+
+// height
+@mixin h_vw($size, $viewport, $min: 0) {
+  height: clamp(#{$min}px, #{get_vw($size, $viewport)}, #{$size}px);
+}
+
+// width
+@mixin w_vw($size, $viewport, $min: 0) {
+  width: clamp(#{$min}px, #{get_vw($size, $viewport)}, #{$size}px);
+}

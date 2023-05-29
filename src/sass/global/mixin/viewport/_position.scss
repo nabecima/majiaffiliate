@@ -1,0 +1,17 @@
+@use './base' as *;
+
+@mixin top($size, $viewport, $min: 0) {
+  top: clamp(#{$min}px, #{get_vw($size, $viewport)}, #{$size}px);
+}
+
+@mixin bottom($size, $viewport, $min: 0) {
+  bottom: clamp(#{$min}px, #{get_vw($size, $viewport)}, #{$size}px);
+}
+
+@mixin right($size, $viewport, $min: 0) {
+  right: clamp(#{$min}px, #{get_vw($size, $viewport)}, #{$size}px);
+}
+
+@mixin left($size, $viewport, $min: 0) {
+  left: clamp(#{$min}px, #{get_vw($size, $viewport)}, #{$size}px);
+}

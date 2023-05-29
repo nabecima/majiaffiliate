@@ -1,0 +1,73 @@
+.p-rule {
+  font-size: 1.4rem;
+  line-height: 1.8;
+  &__container {
+    margin: 0 auto;
+    padding-top: 17px;
+    padding-bottom: 15px;
+    max-width: 800px;
+  }
+
+  &__head {
+    margin-bottom: 30px;
+    font-size: 2.4rem;
+    text-align: center;
+  }
+
+  &__table {
+    margin: 0 auto 30px;
+    max-width: 600px;
+    border-collapse: collapse;
+    $this: &;
+
+    th,
+    td {
+      padding: 6px;
+      font-weight: normal;
+      border: 1px solid #ccc;
+    }
+
+    &--number {
+      @extend #{$this};
+      counter-reset: counter;
+
+      tr:not(:first-of-type) th {
+        counter-increment: counter;
+
+        &::before {
+          content: counter(counter) ". ";
+        }
+      }
+    }
+  }
+
+  &__table-head {
+    width: 35%;
+    background-color: #e4e4e4;
+  }
+
+  &__copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    small {
+      font-size: 100%;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    &__table {
+      width: 95%;
+      th {
+        width: 100%;
+      }
+
+      tr {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+}

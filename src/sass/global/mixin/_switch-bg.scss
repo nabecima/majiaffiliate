@@ -1,0 +1,19 @@
+@mixin switch-bg($path) {
+  .webp & {
+    background-image: url(#{$path}.webp);
+  }
+
+  .no-webp & {
+    background-image: url(#{$path}.png);
+  }
+}
+
+@mixin switch-bg-jpg($path) {
+  .webp & {
+    background-image: url(#{$path}.webp);
+  }
+
+  .no-webp & {
+    background-image: url(#{$path}.jpg);
+  }
+}

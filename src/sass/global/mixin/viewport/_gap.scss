@@ -1,0 +1,9 @@
+@use "./base" as *;
+
+@mixin colgap_vw($size, $viewport, $min: 0) {
+  column-gap: clamp(#{$min}px, #{get_vw($size, $viewport)}, #{$size}px);
+}
+
+@mixin rowgap_vw($size, $viewport, $min: 0) {
+  row-gap: clamp(#{$min}px, #{get_vw($size, $viewport)}, #{$size}px);
+}

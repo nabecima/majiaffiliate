@@ -1,0 +1,8 @@
+@use "./base" as *;
+
+@mixin bs_vw($size1, $size2, $size3, $size4, $color, $viewport, $min: 0) {
+  box-shadow: clamp(#{$min}px, #{get_vw($size1, $viewport)}, #{$size1}px)
+    clamp(#{$min}px, #{get_vw($size2, $viewport)}, #{$size2}px)
+    clamp(#{$min}px, #{get_vw($size3, $viewport)}, #{$size3}px)
+    clamp(#{$min}px, #{get_vw($size4, $viewport)}, #{$size4}px) $color;
+}
