@@ -1,0 +1,54 @@
+@use "../global/" as *;
+
+.p-fv {
+  position: relative;
+  padding-top: 12rem;
+  padding-bottom: 12.3rem;
+  background-color: #fff;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 24.6rem;
+    background-color: #fdfdfd;
+    z-index: -1;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    column-gap: 3.2rem;
+  }
+
+  &__text {
+    p {
+      &:first-of-type {
+        margin-top: 12rem;
+        margin-bottom: 2.4rem;
+        font-size: 3.431rem;
+        font-weight: bold;
+        line-height: calc(51.46px / 34.31px);
+        letter-spacing: 0.04em;
+      }
+
+      &:last-of-type {
+        font-size: 3.431rem;
+        font-weight: bold;
+        line-height: calc(51.46px / 34.31px);
+        letter-spacing: 0.04em;
+
+        span {
+          display: inline-block;
+          margin-left: 0.9rem;
+          margin-right: 1.3rem;
+          font-size: 4.434rem;
+          line-height: calc(75.19px / 44.34px);
+        }
+      }
+    }
+  }
+}

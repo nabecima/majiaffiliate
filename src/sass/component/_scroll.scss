@@ -1,0 +1,25 @@
+@use "../global/" as *;
+
+.c-scroll {
+  position: absolute;
+  padding-bottom: 5rem;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 1.457rem;
+  font-weight: 300;
+  text-transform: uppercase;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    display: block;
+    width: 0.1rem;
+    height: 3.6rem;
+    background-color: rgb(47, 61, 97);
+  }
+}
