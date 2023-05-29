@@ -15,6 +15,7 @@ anime({
     countUpTarget.innerHTML = formattedNumber;
   },
   complete: function (a) {
-    console.log("completed : " + a.completed);
+    countUpTarget.classList.add("completed");
+    // console.log("completed : " + a.completed);
   }
 });

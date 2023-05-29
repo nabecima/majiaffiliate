@@ -6,7 +6,7 @@
   padding-bottom: 12.3rem;
   background-color: #fff;
 
-  &::after {
+  &::before {
     content: "";
     position: absolute;
     left: 0;
@@ -15,10 +15,11 @@
     width: 100%;
     height: 24.6rem;
     background-color: #fdfdfd;
-    z-index: -1;
+    // z-index: -1;
   }
 
   &__container {
+    position: relative;
     display: flex;
     justify-content: center;
     column-gap: 3.2rem;
@@ -42,11 +43,40 @@
         letter-spacing: 0.04em;
 
         span {
+          position: relative;
           display: inline-block;
           margin-left: 0.9rem;
           margin-right: 1.3rem;
           font-size: 4.434rem;
           line-height: calc(75.19px / 44.34px);
+          z-index: 1;
+
+          &::before {
+            content: "";
+            position: absolute;
+            left: 50%;
+            bottom: 10%;
+            transform: translateX(-50%) scaleX(0);
+            display: block;
+            width: 255px;
+            height: 28px;
+            background-repeat: no-repeat;
+            background-size: contain;
+            transform-origin: left top;
+            transition: 0.3s;
+            z-index: -1;
+          }
+
+          &.completed {
+            &::before {
+              transform: translateX(-50%) scaleX(1);
+
+              background-image: url(../images/fv_marker.png);
+              background-repeat: no-repeat;
+              background-size: contain;
+              // z-index: -1;
+            }
+          }
         }
       }
     }
