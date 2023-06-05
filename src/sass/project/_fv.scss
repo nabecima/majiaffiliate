@@ -97,7 +97,7 @@
             &::before {
               transform: translateX(-50%) scaleX(1);
 
-              background-image: url(../images/fv_marker.png);
+              background-image: url(../images/fv_marker.webp);
               background-repeat: no-repeat;
               background-size: contain;
               // z-index: -1;
@@ -152,7 +152,7 @@
               &::before {
                 transform: translateX(-50%) scaleX(1);
 
-                background-image: url(../images/fv_marker-sp.png);
+                background-image: url(../images/fv_marker-sp.webp);
                 background-position: bottom center;
               }
             }

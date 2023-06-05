@@ -4,4 +4,4 @@ import "./lozad";
 import "./anime";
 
 // get image width and height
-// import "./image";
+import "./image";
