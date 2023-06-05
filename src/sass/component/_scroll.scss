@@ -22,4 +22,14 @@
     height: 3.6rem;
     background-color: rgb(47, 61, 97);
   }
+
+  @include mq() {
+    @include pb_vw(69, 750);
+    @include f_vw(19.95, 750);
+
+    &::after {
+      width: 0.2rem;
+      @include h_vw(53, 750);
+    }
+  }
 }

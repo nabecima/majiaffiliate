@@ -6,6 +6,11 @@
   padding-bottom: 12.3rem;
   background-color: #fff;
 
+  @include mq() {
+    @include pt_vw(79, 750);
+    @include pb_vw(190, 750);
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -23,6 +28,17 @@
     display: flex;
     justify-content: center;
     column-gap: 3.2rem;
+
+    @include mq() {
+      flex-direction: column;
+    }
+  }
+
+  &__img {
+    @include mq() {
+      margin: 0 auto;
+      max-width: 32.9rem;
+    }
   }
 
   &__text {
@@ -34,6 +50,14 @@
         font-weight: bold;
         line-height: calc(51.46px / 34.31px);
         letter-spacing: 0.04em;
+
+        @include mq() {
+          margin-top: 0;
+          @include mb_vw(20, 750);
+          @include f_vw(49.98, 750);
+          text-align: center;
+          line-height: calc(74.97px / 49.98px);
+        }
       }
 
       &:last-of-type {
@@ -96,7 +120,49 @@
           bottom: -5rem;
           font-size: 1rem;
         }
+
+        @include mq() {
+          margin: 0 auto;
+          width: fit-content;
+          @include f_vw(55.45, 750);
+          text-align: center;
+
+          &::before {
+            @include right(4.5, 750);
+            @include f_vw(15.53, 750);
+          }
+
+          &::after {
+            right: 0;
+            bottom: -50%;
+            @include f_vw(15.53, 750);
+          }
+
+          span {
+            @include ml_vw(15, 750);
+            @include mr_vw(18, 750);
+            @include f_vw(71.67, 750);
+
+            &::before {
+              @include w_vw(424, 750);
+              @include h_vw(55, 750);
+            }
+
+            &.completed {
+              &::before {
+                transform: translateX(-50%) scaleX(1);
+
+                background-image: url(../images/fv_marker-sp.png);
+                background-position: bottom center;
+              }
+            }
+          }
+        }
       }
+    }
+
+    @include mq() {
+      margin-top: -5%;
     }
   }
 }

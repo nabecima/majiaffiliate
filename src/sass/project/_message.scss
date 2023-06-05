@@ -1,0 +1,76 @@
+@use "../global/" as *;
+
+.p-message {
+  &__wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 750px;
+
+    @include mq() {
+      @include h_vw(1300, 750);
+    }
+
+    &--bgi {
+      font-size: 5.619rem;
+      line-height: calc(92.83px / 56.19px);
+      background-image: url(../images/message_bg.webp);
+
+      @include mq() {
+        background-image: none;
+
+        p {
+          @include f_vw(91.23, 750);
+          line-height: calc(150.73px / 91.23px);
+        }
+      }
+    }
+
+    &--normal {
+      font-size: 5.619rem;
+      line-height: calc(92.83px / 56.19px);
+      background-color: #fff;
+
+      @include mq() {
+        p {
+          @include f_vw(83.59, 750);
+          line-height: calc(138.1px / 83.59px);
+        }
+      }
+    }
+
+    p {
+      letter-spacing: 0.04em;
+      font-weight: bold;
+      text-align: center;
+
+      ruby {
+        position: relative;
+
+        rt {
+          position: absolute;
+          font-size: 1.867rem;
+        }
+      }
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: block;
+      width: 0.2rem;
+      height: 7.6rem;
+      background-color: #9198ab;
+      z-index: 5;
+
+      @include mq() {
+        width: 0.1rem;
+        @include h_vw(161, 750);
+      }
+    }
+  }
+}
