@@ -10,6 +10,7 @@
 
   @include mq() {
     @include pt_vw(130, 750);
+    @include pb_vw(160, 750);
   }
 
   &__sub-head {
@@ -79,6 +80,20 @@
       height: 0.3rem;
       background-color: #262e34;
     }
+
+    @include mq() {
+      @include colgap_vw(19, 750);
+      @include mb_vw(70, 750);
+      @include f_vw(37.9, 750);
+      letter-spacing: calc(62.62px / 37.9px);
+
+      &::before,
+      &::after {
+        // width: 4.4rem;
+        @include w_vw(44, 750);
+        @include h_vw(3, 750);
+      }
+    }
   }
 
   &__textarea {
@@ -87,7 +102,11 @@
     // flex-direction: column;
     // justify-content: space-between;
     margin: 0 auto;
-    max-width: 55.2rem;
+    width: 55.2rem;
+
+    @include mq() {
+      @include w_vw(726, 750);
+    }
 
     p {
       &:first-of-type {
@@ -96,6 +115,12 @@
         font-size: 2.246rem;
         font-weight: 300;
         line-height: calc(37.1px / 22.46px);
+
+        @include mq() {
+          @include mb_vw(35, 750);
+          @include f_vw(33.3, 750);
+          line-height: calc(55.02px / 33.3px);
+        }
       }
 
       &:last-of-type {
@@ -104,6 +129,11 @@
         font-size: 2.661rem;
         font-weight: bold;
         line-height: calc(43.97px / 26.61px);
+
+        @include mq() {
+          @include f_vw(39.46, 750);
+          line-height: calc(65.2px / 39.46px);
+        }
       }
     }
 
@@ -117,16 +147,31 @@
       height: 21.5rem;
       border-top: 2px solid #bebebf;
       border-bottom: 2px solid #bebebf;
+
+      @include mq() {
+        @include w_vw(21, 750);
+        @include h_vw(308, 750);
+      }
     }
 
     &::before {
       left: 0;
       border-left: 2px solid #bebebf;
+
+      @include mq() {
+        border-right: 0;
+        border-width: 0.1rem;
+      }
     }
 
     &::after {
       right: 0;
       border-right: 2px solid #bebebf;
+
+      @include mq() {
+        border-left: 0;
+        border-width: 0.1rem;
+      }
     }
   }
 }
