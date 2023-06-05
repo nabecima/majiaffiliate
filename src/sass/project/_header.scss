@@ -1,0 +1,132 @@
+@use "../global/" as *;
+
+.p-header {
+  position: relative;
+  padding-top: 8.5rem;
+  padding-bottom: 14.2rem;
+  text-align: center;
+  background-image: url(../images/header_bg.webp);
+  overflow-x: hidden;
+
+  @include mq() {
+    @include pt_vw(130, 750);
+  }
+
+  &__sub-head {
+    margin-bottom: 7.5rem;
+    font-size: 4.049rem;
+    font-weight: bold;
+    line-height: calc(66.89px / 40.09px);
+    letter-spacing: 0.04em;
+
+    @include mq() {
+      @include mb_vw(80, 750);
+      // @include mb_vw(105, 750);
+      @include f_vw(49.21, 750);
+      line-height: calc(81.3px / 49.21px);
+    }
+  }
+
+  &__head {
+    position: relative;
+    font-size: 8.48rem;
+    font-weight: bold;
+    line-height: calc(140.1px / 84.8px);
+    letter-spacing: 0.18em;
+    z-index: 1;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      bottom: 45%;
+      transform: translateX(-50%);
+      width: 107.9rem;
+      height: 9.7rem;
+      background-image: url(../images/header_head.webp);
+      z-index: -1;
+    }
+
+    @include mq() {
+      @include f_vw(117.87, 750);
+      line-height: calc(194.74px / 117.87px);
+
+      &::before {
+        bottom: 65%;
+        @include w_vw(1079, 750);
+        @include h_vw(97, 750);
+        background-size: cover;
+      }
+    }
+  }
+
+  &__introduce-head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1.6rem;
+    margin-bottom: 6rem;
+    font-size: 2.727rem;
+    font-weight: bold;
+    line-height: calc(45.05px / 27.27px);
+    letter-spacing: 0.04em;
+
+    &::before,
+    &::after {
+      content: "";
+      display: block;
+      width: 3.2rem;
+      height: 0.3rem;
+      background-color: #262e34;
+    }
+  }
+
+  &__textarea {
+    position: relative;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: space-between;
+    margin: 0 auto;
+    max-width: 55.2rem;
+
+    p {
+      &:first-of-type {
+        margin-top: -0.5em;
+        margin-bottom: 2.8rem;
+        font-size: 2.246rem;
+        font-weight: 300;
+        line-height: calc(37.1px / 22.46px);
+      }
+
+      &:last-of-type {
+        margin-top: -0.25em;
+        color: #f51a67;
+        font-size: 2.661rem;
+        font-weight: bold;
+        line-height: calc(43.97px / 26.61px);
+      }
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      display: block;
+      width: 1.6rem;
+      height: 21.5rem;
+      border-top: 2px solid #bebebf;
+      border-bottom: 2px solid #bebebf;
+    }
+
+    &::before {
+      left: 0;
+      border-left: 2px solid #bebebf;
+    }
+
+    &::after {
+      right: 0;
+      border-right: 2px solid #bebebf;
+    }
+  }
+}
