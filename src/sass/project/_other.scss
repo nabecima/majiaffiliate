@@ -1,0 +1,159 @@
+@use "../global/" as *;
+
+.p-other {
+  background-color: #fafafa;
+
+  &__container {
+    position: relative;
+    @include pt_vw(101, 750);
+    padding-bottom: 10.8rem;
+    margin: 0 auto;
+    max-width: 99.5rem;
+    overflow-x: hidden;
+
+    @include mq() {
+      @include pb_vw(130, 750);
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      display: block;
+      @include w_vw(1281, 750);
+      @include h_vw(101, 750);
+      background-image: url(../images/other_head.webp);
+      background-size: cover;
+    }
+  }
+
+  &__head {
+    position: relative;
+    padding-bottom: 8.7rem;
+    margin-bottom: 4.2rem;
+    margin: -0.5em 0;
+    font-size: 3.628rem;
+    font-weight: bold;
+    line-height: calc(59.94px / 36.28px);
+    letter-spacing: 0.04em;
+    text-align: center;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      display: block;
+      width: 11.9rem;
+      height: 0.2rem;
+      background-color: #484848;
+    }
+
+    @include mq() {
+      @include pb_vw(71, 750);
+      @include mb_vw(72, 750);
+      @include f_vw(43, 750);
+      line-height: calc(59.94px / 43px);
+
+      &::after {
+        @include w_vw(145, 750);
+        @include h_vw(3, 750);
+      }
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 6rem;
+
+    @include mq() {
+      @include rowgap_vw(83, 750);
+    }
+  }
+
+  &__item {
+    &::before {
+      content: "Contents" attr(data-number) ".";
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 4.8rem;
+      width: 16.2rem;
+      height: 3.8rem;
+      color: #fff;
+      font-size: 2.247rem;
+      font-weight: bold;
+      letter-spacing: 0.04em;
+      line-height: calc(37.12px / 22.47px);
+      background-color: #343434;
+    }
+
+    @include mq() {
+      @include pl_vw(30, 750);
+
+      &::before {
+        @include mb_vw(47, 750);
+        @include w_vw(181.66, 750);
+        @include h_vw(42.62, 750);
+        @include f_vw(25.2, 750);
+      }
+    }
+  }
+
+  &__item-content {
+    padding-left: 1.8rem;
+
+    @include mq() {
+      @include pl_vw(13, 750);
+      @include pr_vw(30, 750);
+    }
+  }
+
+  &__item-head {
+    position: relative;
+    padding-bottom: 4.3rem;
+    margin-bottom: 3.6rem;
+    font-size: 2.855rem;
+    font-weight: bold;
+    line-height: 1;
+    letter-spacing: 0.04em;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      display: block;
+      width: 23.2rem;
+      height: 0.2rem;
+      background-color: #343434;
+    }
+
+    @include mq() {
+      @include pb_vw(42, 750);
+      @include mb_vw(42, 750);
+      @include f_vw(37, 750);
+      line-height: calc(59.58px / 37px);
+
+      &::after {
+        @include w_vw(232, 750);
+        @include h_vw(2, 750);
+      }
+    }
+  }
+
+  &__item-body {
+    margin: -0.5em 0;
+    font-size: 2.247rem;
+    font-weight: 300;
+    line-height: calc(43.47px / 22.47px);
+
+    @include mq() {
+      @include f_vw(32, 750);
+      line-height: calc(60px / 32px);
+    }
+  }
+}
