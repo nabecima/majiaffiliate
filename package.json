@@ -37,6 +37,7 @@
   ],
   "dependencies": {
     "animejs": "^3.2.1",
-    "numeral": "^2.0.6"
+    "numeral": "^2.0.6",
+    "swiper": "^9.3.2"
   }
 }

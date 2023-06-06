@@ -6,8 +6,8 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 module.exports = {
   entry: {
     main: "./src/js/index.js",
-    pri: "./src/js/pri.js",
-    tokutei: "./src/js/tokutei.js"
+    // pri: "./src/js/pri.js",
+    // tokutei: "./src/js/tokutei.js"
   },
 
   output: {
@@ -124,18 +124,18 @@ module.exports = {
       inject: "body",
       chunks: ["main"]
     }),
-    new HtmlWebpackPlugin({
-      template: "./src/pri.html",
-      filename: "pri.html",
-      inject: "body",
-      chunks: ["pri"]
-    }),
-    new HtmlWebpackPlugin({
-      template: "./src/tokutei.html",
-      filename: "tokutei.html",
-      inject: "body",
-      chunks: ["tokutei"]
-    })
+    // new HtmlWebpackPlugin({
+    //   template: "./src/pri.html",
+    //   filename: "pri.html",
+    //   inject: "body",
+    //   chunks: ["pri"]
+    // }),
+    // new HtmlWebpackPlugin({
+    //   template: "./src/tokutei.html",
+    //   filename: "tokutei.html",
+    //   inject: "body",
+    //   chunks: ["tokutei"]
+    // })
   ],
 
   target: ["web", "es5"]
