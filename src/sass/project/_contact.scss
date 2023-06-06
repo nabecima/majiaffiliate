@@ -1,0 +1,201 @@
+@use "../global/" as *;
+
+.p-contact {
+  padding-top: 7.4rem;
+  padding-bottom: 5.3rem;
+  background-image: url(../images/contact_bg.webp);
+
+  @include mq() {
+    @include pt_vw(92, 750);
+    @include pb_vw(56, 750);
+    background-image: url(../images/contact_bg-sp.webp);
+  }
+
+  &__countdown-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 6.3rem;
+    max-width: 96.5rem;
+    height: 6.5rem;
+    color: #fff;
+    font-size: 2.865rem;
+    font-weight: bold;
+    background-color: #353535;
+
+    @include mq() {
+      @include mb_vw(81, 750);
+      @include f_vw(32.01, 750);
+      @include h_vw(72.99, 750);
+    }
+  }
+
+  &__message {
+    @include mb_vw(64, 750);
+
+    p {
+      margin: -0.5em 0;
+      letter-spacing: 0.04em;
+      text-align: center;
+
+      &:first-of-type {
+        // margin-bottom: calc(4.2rem - 0.5em);
+        margin-bottom: 4.2rem;
+        font-size: 4.049rem;
+        font-weight: bold;
+        line-height: calc(66.89px / 40.49px);
+
+        @include mq() {
+          @include mb_vw(59, 750);
+          @include f_vw(44.24, 750);
+          line-height: calc(73.1px / 44.24px);
+        }
+      }
+
+      &:last-of-type {
+        color: #f51a67;
+        font-size: 4.049rem;
+        font-weight: bold;
+        line-height: calc(66.89px / 40.49px);
+
+        br {
+          &:last-of-type {
+            display: none;
+
+            @media screen and (max-width: 880px) {
+              display: inline-block;
+            }
+          }
+        }
+
+        @include mq() {
+          @include f_vw(44.24, 750);
+          line-height: calc(73.1px / 44.24px);
+        }
+      }
+    }
+  }
+
+  &__btn-info {
+    margin: 0 auto;
+    max-width: 742px;
+
+    p {
+      font-weight: 300;
+      letter-spacing: 0.04em;
+      line-height: 1;
+
+      &:first-of-type {
+        margin-bottom: 6.3rem;
+        font-size: 2.526rem;
+        text-align: center;
+
+        @include mq() {
+          @include mb_vw(63, 750);
+          @include f_vw(25.26, 750);
+        }
+      }
+
+      &:last-of-type {
+        display: flex;
+        flex-direction: column;
+        row-gap: 0.5em;
+        margin-top: 5.8rem;
+
+        small {
+          font-size: inherit;
+
+          @include mq() {
+            @include f_vw(20.84, 750);
+          }
+        }
+
+        @include mq() {
+          @include mt_vw(67, 750);
+        }
+      }
+    }
+  }
+
+  &__btn-wrapper {
+    position: relative;
+    margin: 0 auto;
+    max-width: 743px;
+    text-align: center;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      display: block;
+      width: 1.6rem;
+      height: 21.5rem;
+    }
+
+    &::before {
+      left: 0;
+      border-top: 2px solid #bfbfc1;
+      border-left: 2px solid #bfbfc1;
+      border-bottom: 2px solid #bfbfc1;
+    }
+
+    &::after {
+      right: 0;
+      border-top: 2px solid #bfbfc1;
+      border-right: 2px solid #bfbfc1;
+      border-bottom: 2px solid #bfbfc1;
+    }
+
+    @include mq() {
+      &::before,
+      &::after {
+        @include w_vw(15, 750);
+        @include h_vw(230, 750);
+      }
+
+      &::before {
+        transform: translateY(-50%) translateX(50%);
+      }
+
+      &::after {
+        transform: translateY(-50%) translateX(-50%);
+      }
+    }
+  }
+
+  &__btn {
+    position: relative;
+    margin: 0 auto;
+    max-width: 64.6rem;
+    z-index: 1;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: block;
+      padding: 1.9rem 2.7rem 2rem;
+      width: 100%;
+      height: 100%;
+      box-sizing: content-box;
+      background-color: #f1f1f1;
+      z-index: -1;
+    }
+
+    @include mq() {
+      @include w_vw(646, 750);
+
+      &::before {
+        @include pt_vw(19, 750);
+        @include px_vw(27, 750);
+        @include pb_vw(22, 750);
+        // @include w_vw(700, 750);
+        // @include h_vw(241, 750);
+      }
+    }
+  }
+}
