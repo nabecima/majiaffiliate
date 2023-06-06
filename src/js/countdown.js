@@ -1,11 +1,11 @@
-const getElement = (id) => document.getElementById(id);
+const getElement = (el) => document.querySelectorAll(el);
 
 const countDownId = setInterval(() => {
-  const days = getElement("day");
-  const hours = getElement("hours");
-  const minutes = getElement("minutes");
-  const seconds = getElement("seconds");
-  const milliseconds = getElement("milliseconds");
+  const days = getElement(".day");
+  const hours = getElement(".hours");
+  const minutes = getElement(".minutes");
+  const seconds = getElement(".seconds");
+  const milliseconds = getElement(".milliseconds");
 
   const currentTime = new Date().getTime();
   const targetTime = new Date(2023, 12, 0, "23", "59", "59").getTime();
@@ -26,9 +26,12 @@ const countDownId = setInterval(() => {
   const textSecond = Math.floor((gap % minute) / second);
   const textMillisecond = Math.floor(gap);
 
-  days.innerHTML = textDay;
-  hours.innerHTML = textHour;
-  minutes.innerHTML = textMinute;
-  seconds.innerHTML = textSecond;
-  milliseconds.innerHTML = String(textMillisecond).slice(-3, -1);
+  for (let i = 0; i < 2; i++) {
+    // console.log(i);
+    days[i].innerHTML = textDay;
+    hours[i].innerHTML = textHour;
+    minutes[i].innerHTML = textMinute;
+    seconds[i].innerHTML = textSecond;
+    milliseconds[i].innerHTML = String(textMillisecond).slice(-3, -1);
+  }
 }, 1);
