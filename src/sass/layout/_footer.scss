@@ -1,0 +1,29 @@
+@use "../global/" as *;
+
+.l-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2.7rem 0;
+  color: #fff;
+  font-size: 1.499rem;
+  line-height: calc(24.77px / 14.49px);
+  background-color: #353535;
+
+  a {
+    display: inline-block;
+  }
+
+  &__copyright {
+    small {
+      font-size: inherit;
+    }
+  }
+
+  @include mq() {
+    @include py_vw(34, 750);
+    @include f_vw(24.39, 750);
+    line-height: calc(40.3px / 24.39px);
+  }
+}
