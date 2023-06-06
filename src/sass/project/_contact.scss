@@ -1,9 +1,11 @@
 @use "../global/" as *;
 
 .p-contact {
+  position: relative;
   padding-top: 7.4rem;
   padding-bottom: 5.3rem;
   background-image: url(../images/contact_bg.webp);
+  z-index: 1;
 
   @include mq() {
     @include pt_vw(92, 750);
@@ -111,6 +113,7 @@
         }
 
         @include mq() {
+          @include pl_vw(32, 750);
           @include mt_vw(67, 750);
         }
       }
@@ -184,6 +187,11 @@
       box-sizing: content-box;
       background-color: #f1f1f1;
       z-index: -1;
+    }
+
+    picture {
+      // box-shadow: 9px 7px 9px rgba(64, 64, 64, 0.56);
+      @include bs_vw(9, 7, 9, 0, rgba(64, 64, 64, 0.56), 750);
     }
 
     @include mq() {

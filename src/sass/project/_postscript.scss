@@ -1,0 +1,178 @@
+@use "../global/" as *;
+
+.p-postscript {
+  position: relative;
+
+  &::after {
+    @include mq() {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: block;
+      @include w_vw(2, 750);
+      @include h_vw(76, 750);
+      background-color: #9198ab;
+      z-index: 5;
+    }
+  }
+
+  &__head {
+    position: relative;
+    padding-bottom: 7.2rem;
+    margin-bottom: 8.1rem;
+    font-size: 3.628rem;
+    font-weight: bold;
+    line-height: 1;
+    text-align: center;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      display: block;
+      width: 19.1rem;
+      height: 0.2rem;
+      background-color: #484848;
+    }
+
+    @include mq() {
+      @include pb_vw(72, 750);
+      @include mb_vw(73, 750);
+      @include f_vw(37, 750);
+
+      &::after {
+        @include w_vw(119, 750);
+        @include h_vw(2, 750);
+      }
+    }
+  }
+
+  &__container {
+    position: relative;
+    padding-top: 10.1rem;
+    padding-bottom: 7.5rem;
+    margin: 0 auto;
+    width: fit-content;
+    overflow-x: hidden;
+
+    @include mq() {
+      @include pt_vw(101, 750);
+      @include pb_vw(112, 750);
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 87.7rem;
+      height: 10.1rem;
+      background-image: url(../images/postscript_head.webp);
+      background-size: cover;
+
+      @include mq() {
+        @include w_vw(878, 750);
+        @include h_vw(101, 750);
+      }
+    }
+
+    > picture {
+      margin: 10.6rem auto 8.3rem;
+      max-width: 748px;
+
+      @include mq() {
+        @include mt_vw(86, 750);
+        @include mb_vw(82, 750);
+        @include w_vw(708, 750);
+      }
+    }
+
+    > p {
+      position: relative;
+      margin: 11.5rem auto 9.1rem;
+      width: fit-content;
+      font-size: 4.773rem;
+      font-weight: bold;
+      letter-spacing: 0.04em;
+
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 4.9rem;
+        height: 3.8rem;
+        background-image: url(../images/quote.webp);
+        background-size: cover;
+      }
+
+      &::before {
+        right: 95%;
+        transform: translateY(-55%);
+      }
+
+      &::after {
+        left: 95%;
+        transform: translateY(-60%) scale(-1, -1);
+      }
+
+      @include mq() {
+        @include mt_vw(132, 750);
+        @include mb_vw(110, 750);
+        @include f_vw(72.62, 750);
+
+        &::before,
+        &::after {
+          @include w_vw(73, 750);
+          @include h_vw(57, 750);
+        }
+      }
+    }
+  }
+
+  &__textarea {
+    @include px_vw(25, 750);
+
+    p {
+      margin: -0.5em 0;
+      font-size: 2.247rem;
+      font-weight: 300;
+      line-height: calc(43.47px / 22.47px);
+      letter-spacing: 0.04em;
+
+      &:not(:first-of-type) {
+        margin-top: calc(6.5rem - 0.5em);
+      }
+
+      span {
+        font-weight: bold;
+
+        &.large {
+          font-size: 2.931rem;
+        }
+      }
+    }
+
+    @include mq() {
+      p {
+        @include f_vw(32, 750);
+        line-height: calc(60px / 32px);
+
+        &:not(:last-of-type) {
+          @include mt_vw(87, 750);
+        }
+
+        span {
+          &.large {
+            @include f_vw(32, 750);
+          }
+        }
+      }
+    }
+  }
+}
