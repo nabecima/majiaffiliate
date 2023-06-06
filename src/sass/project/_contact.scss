@@ -27,6 +27,8 @@
 
     @include mq() {
       @include mb_vw(81, 750);
+      @include w_vw(715, 750);
+      @include h_vw(72.99, 750);
       @include f_vw(32.01, 750);
       @include h_vw(72.99, 750);
     }
