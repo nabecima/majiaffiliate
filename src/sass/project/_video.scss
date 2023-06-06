@@ -1,0 +1,60 @@
+@use "../global/" as *;
+
+.p-video {
+  padding-top: 7.5rem;
+  padding-bottom: 8.5rem;
+  background-image: url(../images/video_bg.webp);
+  background-size: cover;
+
+  @include mq() {
+    @include pt_vw(80, 750);
+    @include pb_vw(140, 750);
+  }
+
+  &__text {
+    position: relative;
+    margin-bottom: 9.3rem;
+    font-feature-settings: "palt";
+    font-size: 3.628rem;
+    font-weight: bold;
+    line-height: calc(59.94px / 36.28px);
+    letter-spacing: 0.04em;
+    text-align: center;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: calc(100% + 1.3rem);
+      left: 50%;
+      transform: translate(-50%);
+      width: 57.1rem;
+      height: 1.6rem;
+      background-image: url(../images/video_arrow.webp);
+    }
+
+    @include mq() {
+      @include mb_vw(132, 750);
+      @include f_vw(43.67, 750);
+      line-height: calc(72.15px / 43.67px);
+
+      &::after {
+        @include w_vw(689, 750);
+        @include h_vw(19, 750);
+        background-size: cover;
+      }
+    }
+  }
+
+  &__wrapper {
+    margin: 0 auto;
+    max-width: 74.6rem;
+    height: 42rem;
+    aspect-ratio: 746 / 420;
+    background-color: #484848;
+
+    @include mq() {
+      @include w_vw(685, 750);
+      @include h_vw(386, 750);
+    }
+  }
+}
