@@ -1,0 +1,196 @@
+@use "../global/" as *;
+
+.p-grouth {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    width: 0.2rem;
+    height: 7.6rem;
+    background-color: #9198ab;
+    z-index: 5;
+
+    @include mq() {
+      @include w_vw(2, 750);
+      @include h_vw(76, 750);
+    }
+  }
+
+  &__container {
+    position: relative;
+    padding-top: 10.1rem;
+    padding-bottom: 6rem;
+    margin: 0 auto;
+    max-width: 99.5rem;
+    overflow-x: hidden;
+
+    @include mq() {
+      @include pt_vw(101, 750);
+      @include pb_vw(87, 750);
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      display: block;
+      width: 58.4rem;
+      height: 10.1rem;
+      background-image: url(../images/grouth_head.webp);
+      background-size: cover;
+      z-index: -1;
+
+      @include mq() {
+        @include w_vw(584, 750);
+        @include h_vw(101, 750);
+      }
+    }
+
+    > p {
+      &:first-of-type {
+        position: relative;
+        padding-bottom: 5.5rem;
+        padding-left: 1.7rem;
+        margin-top: calc(9.6rem - 0.5em);
+        margin-bottom: calc(9rem - 0.5em);
+        font-size: 2.855rem;
+        font-weight: bold;
+        letter-spacing: 0.04em;
+        line-height: calc(47.17px / 28.55px);
+
+        span {
+          color: #f51a67;
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 100%;
+          display: block;
+          width: 23.2rem;
+          height: 0.2rem;
+          background-color: #484848;
+        }
+
+        @include mq() {
+          padding: 0;
+          @include pb_vw(56, 750);
+          @include mt_vw(86, 750);
+          @include ml_vw(30, 750);
+          @include mb_vw(87, 750);
+          @include f_vw(37, 750);
+          line-height: calc(60px / 37px);
+
+          &::after {
+            @include w_vw(232, 750);
+            @include h_vw(2, 750);
+          }
+        }
+      }
+
+      &:last-of-type {
+        margin-top: 6.9rem;
+        font-size: 2.3rem;
+        text-align: right;
+
+        @include mq() {
+          @include pr_vw(30, 750);
+          @include mt_vw(81, 750);
+        }
+      }
+    }
+  }
+
+  &__head {
+    position: relative;
+    padding-bottom: 7.2rem;
+    margin-bottom: 7.1rem;
+    margin: -0.5em 0;
+    font-size: 3.628rem;
+    font-weight: bold;
+    letter-spacing: 0.04rem;
+    line-height: calc(59.94px / 36.28px);
+    text-align: center;
+
+    span {
+      color: #f51a67;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      display: block;
+      width: 11.9rem;
+      height: 0.2rem;
+      background-color: #484848;
+    }
+
+    @include mq() {
+      @include pb_vw(71, 750);
+      @include mb_vw(63, 750);
+      @include f_vw(37, 750);
+      line-height: calc(59.94px / 37px);
+
+      &::after {
+        @include w_vw(119, 750);
+        @include h_vw(2, 750);
+      }
+    }
+  }
+
+  &__textarea {
+    p {
+      margin: -0.5em 0;
+      font-size: 2.247rem;
+      font-weight: 300;
+      letter-spacing: 0.04em;
+      line-height: calc(43.47px / 22.47px);
+
+      &:not(:first-of-type) {
+        margin-top: 6.5rem;
+      }
+
+      span {
+        font-weight: bold;
+
+        &.emphasis {
+          color: #f51a67;
+        }
+
+        &.large {
+          font-size: 2.931rem;
+        }
+      }
+    }
+
+    @include pl_vw(30, 750);
+
+    @include mq() {
+      p {
+        @include f_vw(32, 750);
+        line-height: calc(60px / 32px);
+
+        &:not(:first-of-type) {
+          @include mt_vw(90, 750);
+        }
+
+        span {
+          &.large {
+            @include f_vw(39, 750);
+          }
+        }
+      }
+    }
+  }
+}
