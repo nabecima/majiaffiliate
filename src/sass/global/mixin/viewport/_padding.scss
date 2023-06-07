@@ -31,3 +31,7 @@
   padding-top: clamp(#{$min}px, #{get_vw($size, $viewport)}, #{$size}px);
   padding-bottom: clamp(#{$min}px, #{get_vw($size, $viewport)}, #{$size}px);
 }
+
+@mixin bl_vw($size, $viewport, $color, $min: 0) {
+  border-left: clamp(#{$min}px, #{get_vw($size, $viewport)}, #{$size}px) solid $color;
+}

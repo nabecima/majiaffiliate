@@ -1,0 +1,298 @@
+@use "../global/" as *;
+
+.p-teachers {
+  position: relative;
+  @include pt_vw(101, 750);
+  padding-bottom: 10.6rem;
+
+  @include pb_vw(121, 750);
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0.6rem;
+    left: 50%;
+    transform: translateX(-50%);
+    @include w_vw(610, 750);
+    @include h_vw(97, 750);
+    background-image: url(../images/teachers_head.webp);
+    background-size: cover;
+  }
+
+  &__container {
+    @include px_vw(30, 750);
+    margin: 0 auto;
+    max-width: 96.5rem;
+    box-sizing: content-box;
+  }
+
+  &__head {
+    position: relative;
+    padding-bottom: 8.6rem;
+    margin-top: -0.25em;
+    margin-bottom: 7.1rem;
+    font-size: 3.628rem;
+    font-weight: bold;
+    letter-spacing: 0.04em;
+    line-height: calc(59.94px / 36.28px);
+    text-align: center;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      display: block;
+      @include w_vw(119, 750);
+      @include h_vw(3, 750);
+      background-color: #484848;
+    }
+
+    @include mq() {
+      @include pb_vw(69, 750);
+      @include mb_vw(67, 750);
+      @include f_vw(43, 750);
+      line-height: calc(59.94px / 43px);
+    }
+  }
+
+  &__name {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    row-gap: 3.4rem;
+    padding-bottom: 2.7rem;
+    margin-bottom: 3.7rem;
+    font-size: 2.855rem;
+    font-weight: bold;
+    line-height: 1;
+    letter-spacing: 0.04em;
+
+    span {
+      display: inline-block;
+      margin: -0.5em 0;
+      color: #8f8f8f;
+      font-size: 2.457rem;
+      font-weight: 300;
+      line-height: calc(40.59px / 24.57px);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 23.2rem;
+      height: 0.2rem;
+      background-color: #484848;
+    }
+
+    @include mq() {
+      @include rowgap_vw(37, 750);
+      @include pb_vw(39, 750);
+      @include mb_vw(47, 750);
+      @include f_vw(37.85, 750);
+
+      span {
+        @include f_vw(32.57, 750);
+        line-height: calc(53.82px / 32.57px);
+      }
+
+      &::after {
+        @include w_vw(309, 750);
+        @include h_vw(3, 750);
+      }
+    }
+  }
+
+  &__thumb {
+    box-shadow: 0 0 15px 0 rgba(72, 72, 72, 0.16);
+
+    @include mq() {
+      @include mb_vw(45, 750);
+    }
+  }
+
+  &__body {
+    position: relative;
+    padding-left: 3rem;
+    margin-top: 4.8rem;
+    border-left: 6px solid #8f8f8f;
+
+    p {
+      margin: -0.5em 0;
+      font-size: 2.247rem;
+      font-weight: 300;
+      line-height: calc(43.47px / 22.47px);
+      letter-spacing: 0.04em;
+
+      &:not(:first-of-type) {
+        margin-top: 6.2rem;
+      }
+
+      &.note {
+        position: absolute;
+        right: 0;
+        margin-top: 0 !important;
+        width: 100%;
+        @include f_vw(18.77, 750);
+        text-align: right;
+      }
+    }
+
+    @include mq() {
+      @include bl_vw(6, 750, #8f8f8f);
+      padding: 0;
+
+      p {
+        @include pl_vw(21, 750);
+        @include f_vw(32, 750);
+        line-height: calc(60px / 32px);
+
+        &:not(:first-of-type) {
+          bottom: -25%;
+          @include mt_vw(84, 750);
+        }
+      }
+    }
+  }
+
+  &__introduce {
+    position: relative;
+    padding-bottom: 8.8rem;
+    margin-bottom: 7.9rem;
+
+    @include mq() {
+      @include pb_vw(189, 750);
+      margin: 0;
+
+      &::after {
+        content: none !important;
+      }
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 11.9rem;
+      height: 0.2rem;
+      background-color: #484848;
+    }
+
+    & + p {
+      font-size: 2.247rem;
+      font-weight: 300;
+      line-height: calc(43.47px / 22.47px);
+
+      span {
+        font-weight: bold;
+      }
+
+      @include mq() {
+        @include f_vw(32, 750);
+        line-height: calc(60px / 32px);
+      }
+    }
+
+    > div {
+      &:first-of-type {
+        margin-bottom: 7.1rem;
+
+        @include mq() {
+          @include mb_vw(108, 750);
+        }
+      }
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2.2rem;
+    row-gap: 6rem;
+    margin-bottom: 6.9rem;
+
+    @include mq() {
+      // @include px_vw(30, 75 /0);
+      grid-template-columns: 1fr;
+      @include rowgap_vw(106, 750);
+    }
+  }
+
+  &__item-name {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.3rem;
+    padding-bottom: 2.7rem;
+    margin-bottom: 3.2rem;
+    font-size: 2.855rem;
+    font-weight: bold;
+    line-height: 1;
+
+    span {
+      display: inline-block;
+      margin: -0.5em 0;
+      color: #8f8f8f;
+      font-size: 2.457rem;
+      line-height: calc(40.59px / 24.57px);
+      font-weight: 300;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 0;
+      display: block;
+      width: 23.2rem;
+      height: 0.2rem;
+      background-color: #484848;
+    }
+
+    @include mq() {
+      @include rowgap_vw(37, 750);
+      @include pb_vw(39, 750);
+      @include mb_vw(47, 750);
+      @include f_vw(37.85, 750);
+
+      span {
+        @include f_vw(32.57, 750);
+        line-height: calc(53.82px / 32.57px);
+      }
+
+      &::after {
+        @include w_vw(309, 750);
+        @include h_vw(3, 750);
+      }
+    }
+  }
+
+  &__item-thumb {
+    margin-bottom: 3.4rem;
+    @include mq() {
+      @include mb_vw(45, 750);
+    }
+  }
+
+  &__item-body {
+    padding-left: 1.5rem;
+    margin: -0.5em 0;
+    font-size: 2.247rem;
+    font-weight: 300;
+    line-height: calc(43.47px / 22.47px);
+    letter-spacing: 0.04em;
+    border-left: 6px solid #8f8f8f;
+
+    @include mq() {
+      @include pl_vw(21, 750);
+      @include f_vw(32, 750);
+      line-height: calc(60px / 32px);
+      @include bl_vw(6, 750, #8f8f8f);
+    }
+  }
+}

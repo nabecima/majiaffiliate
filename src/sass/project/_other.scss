@@ -1,31 +1,35 @@
 @use "../global/" as *;
 
 .p-other {
+  position: relative;
+  @include pt_vw(101, 750);
+  padding-bottom: 10.8rem;
   background-color: #fafafa;
+  overflow-x: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    @include w_vw(1281, 750);
+    @include h_vw(101, 750);
+    background-image: url(../images/other_head.webp);
+    background-size: cover;
+    // z-index: -1;
+  }
 
   &__container {
     position: relative;
-    @include pt_vw(101, 750);
-    padding-bottom: 10.8rem;
     margin: 0 auto;
     max-width: 99.5rem;
-    overflow-x: hidden;
+    // overflow-x: hidden;
+    z-index: 1;
 
     @include mq() {
       @include pb_vw(130, 750);
-    }
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      display: block;
-      @include w_vw(1281, 750);
-      @include h_vw(101, 750);
-      background-image: url(../images/other_head.webp);
-      background-size: cover;
     }
   }
 
