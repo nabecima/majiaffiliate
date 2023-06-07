@@ -3,6 +3,7 @@
 .p-recommend {
   position: relative;
   @include pt_vw(101, 750);
+  overflow-x: hidden;
 
   &::before {
     content: "";
@@ -11,7 +12,7 @@
     left: 50%;
     transform: translateX(-50%);
     display: block;
-    width: 133.8rem;
+    @include w_vw(1338, 750);
     @include h_vw(101, 750);
     background-image: url(../images/recommend_head.webp);
     background-size: cover;
@@ -37,6 +38,48 @@
       height: 0.2rem;
       background-color: #343434;
     }
+
+    @include mq() {
+      @include pb_vw(84, 750);
+      margin-top: -0.25em;
+      @include mb_vw(97, 750);
+      @include f_vw(43, 750);
+      line-height: calc(59.94px / 43px);
+
+      &::after {
+        @include w_vw(144, 750);
+        @include h_vw(3, 750);
+      }
+    }
+  }
+
+  &__account-wrapper {
+    position: relative;
+    padding: 1.6rem 0 5.9rem;
+    margin: 0 auto 9.4rem;
+    max-width: 966px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 11.9rem;
+      height: 0.2rem;
+      background-color: #343434;
+    }
+
+    @include mq() {
+      @include pb_vw(77, 750);
+      @include mb_vw(76, 750);
+      @include w_vw(681, 750);
+
+      &::after {
+        @include w_vw(144, 750);
+        @include h_vw(3, 750);
+      }
+    }
   }
 
   &__container {
@@ -53,6 +96,10 @@
   &__item {
     padding-bottom: 7.5rem;
     border-bottom: 2px dotted #5e5e5e;
+
+    @include mq() {
+      @include pl_vw(30, 750);
+    }
   }
 
   &__item-head {
@@ -87,7 +134,7 @@
         width: 100%;
         height: 21px;
         z-index: -1;
-        transform: scaleX(0);
+        transform: scaleX(1);
         transform-origin: left center;
         // transition: 0.3s;
         transition-delay: 1s;
@@ -98,11 +145,18 @@
         }
       }
 
-      &.scrolled {
-        picture {
-          transform: scaleX(1);
-        }
-      }
+      // &.scrolled {
+      //   picture {
+      //     transform: scaleX(1);
+      //   }
+      // }
+    }
+
+    @include mq() {
+      @include colgap_vw(19, 760);
+      @include mb_vw(55, 750);
+      @include f_vw(37, 750);
+      line-height: calc(59.58px / 37px);
     }
   }
 
@@ -142,6 +196,28 @@
       color: #8f8f8f;
       font-size: 1.951rem;
     }
+
+    @include mq() {
+      @include pl_vw(14, 750);
+      @include pb_vw(43, 750);
+      column-gap: 0;
+      @include f_vw(38.25, 750);
+
+      &::before {
+        @include mr_vw(15, 750);
+        @include w_vw(19, 750);
+        @include h_vw(3, 750);
+      }
+
+      &::after {
+        @include w_vw(311, 750);
+        @include h_vw(3, 750);
+      }
+      span {
+        @include ml_vw(32, 750);
+        @include f_vw(26.14, 750);
+      }
+    }
   }
 
   &__item-twitter-wrapper {
@@ -158,12 +234,29 @@
       background-image: url(../images/stripe.webp);
       z-index: -1;
     }
+
+    @include mq() {
+      @include mb_vw(52, 750);
+
+      &::before {
+        @include w_vw(963, 750);
+        @include h_vw(382, 750);
+        transform: translate(-50%, -50%);
+      }
+    }
   }
 
   &__item-twitter {
     margin: 0 auto;
     max-width: 43.2rem;
     box-shadow: 0 0 11px 8px rgba(181, 181, 181, 0.16);
+
+    @include mq() {
+      margin-right: auto;
+      margin-left: 0;
+      max-width: none;
+      @include w_vw(687, 750);
+    }
   }
 
   &__body {
@@ -183,6 +276,17 @@
 
       &:not(:first-of-type) {
         margin-top: 6rem;
+      }
+    }
+
+    @include mq() {
+      p {
+        @include f_vw(32, 750);
+        line-height: calc(60px / 32px);
+
+        &:not(:first-of-type) {
+          @include mt_vw(90, 750);
+        }
       }
     }
   }

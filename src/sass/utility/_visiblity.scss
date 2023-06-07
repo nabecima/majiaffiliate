@@ -1,19 +1,27 @@
-@use '../global/' as g;
+@use "../global/" as g;
 
-.u-sm{
-  &--hidden{
+.u-sm {
+  &--hidden {
     display: block;
 
-    @include g.mq(){
+    @include g.mq() {
       display: none;
     }
   }
 
-  &--block{
+  &--block {
     display: none;
 
-    @include g.mq(){
+    @include g.mq() {
       display: block;
+    }
+  }
+
+  &--flex {
+    display: none;
+
+    @include g.mq() {
+      display: flex;
     }
   }
 }
