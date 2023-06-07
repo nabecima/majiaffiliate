@@ -1,0 +1,172 @@
+@use "../global/" as *;
+
+.p-benefits {
+  background-color: #fcf6eb;
+
+  &__container {
+    position: relative;
+    overflow-x: hidden;
+    @include pt_vw(98, 750);
+    padding-bottom: 7.5rem;
+    margin: 0 auto;
+    max-width: 98.5rem;
+    box-sizing: content-box;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      @include w_vw(1047, 750);
+      @include h_vw(126, 750);
+      background-image: url(../images/benefit_head.webp);
+      background-size: cover;
+    }
+
+    @media screen and (max-width: 1000px) {
+      @include px_vw(30, 750);
+    }
+  }
+
+  &__head {
+    position: relative;
+    padding-bottom: 8.5rem;
+    margin: -0.5em 0;
+    margin-bottom: 8.2rem;
+    font-size: 3.628rem;
+    font-weight: bold;
+    line-height: calc(59.94px / 36.28px);
+    letter-spacing: 0.04em;
+    text-align: center;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 11.9rem;
+      height: 0.2rem;
+      background-color: #484848;
+    }
+
+    @include mq() {
+      @include pb_vw(69, 750);
+      @include mb_vw(59, 750);
+
+      &::after {
+        @include w_vw(145, 750);
+        @include h_vw(3, 750);
+      }
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 9.9rem;
+  }
+
+  &__item {
+    &::before {
+      content: "Special" attr(data-number) ".";
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 4.7rem;
+      width: 16.2rem;
+      height: 3.8rem;
+      color: #fff;
+      font-size: 2.247rem;
+      font-weight: bold;
+      background-color: #484848;
+    }
+  }
+
+  &__item-body {
+    // @include pl_vw(21, 750);
+    @media screen and (max-width: 1000px) {
+      @include pl_vw(21, 750);
+    }
+
+    @include mq() {
+      padding: 0;
+    }
+  }
+
+  &__item-head {
+    position: relative;
+    padding-bottom: 4.3rem;
+    margin-top: -0.5em;
+    margin-bottom: 5.7rem;
+    font-size: 2.855rem;
+    font-weight: bold;
+    letter-spacing: 0.04em;
+    line-height: calc(47.17px / 28.55px);
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 0;
+      display: block;
+      width: 23.2rem;
+      height: 0.2rem;
+      background-color: #484848;
+    }
+
+    span {
+      color: #f51a67;
+    }
+
+    @include mq() {
+      @include pb_vw(50, 750);
+      @include ml_vw(14, 750);
+      @include mb_vw(60, 750);
+      @include f_vw(37, 750);
+      line-height: calc(60px / 37px);
+
+      &::after {
+        @include w_vw(232, 750);
+        @include h_vw(2, 750);
+      }
+    }
+  }
+
+  &__thumb {
+    margin: 0 auto 5.3rem;
+    max-width: 69.1rem;
+  }
+
+  &__textarea {
+    p {
+      margin: -0.5em 0;
+      font-size: 2.247rem;
+      font-weight: 300;
+      line-height: calc(43.47px / 22.47px);
+      letter-spacing: 0.04em;
+
+      span {
+        font-weight: bold;
+
+        &.emphasis {
+          color: #f51a67;
+        }
+      }
+
+      &:not(:first-of-type) {
+        margin-top: 6rem;
+      }
+    }
+
+    @include mq() {
+      @include f_vw(32, 750);
+      line-height: calc(60px / 32px);
+
+      &:not(:first-of-type) {
+        @include mt_vw(75, 750);
+      }
+    }
+  }
+}
