@@ -6,3 +6,5 @@ import "./swiper";
 import "./countdown/countdown";
 import "./marker";
 import "./inview";
+
+import "./image";

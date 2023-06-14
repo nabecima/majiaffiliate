@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;700&display=swap" rel="stylesheet" />
     <link rel="preload" as="image" href="./images/fv_pc.webp" />
+    <link rel="preload" as="image" href="./images/fv_gif.gif" />
     <!-- <link rel="preload" as="image" href="./images/fv_pc.png" /> -->
     <link rel="preload" as="image" href="./images/fv_marker.webp" />
     <!-- <link rel="preload" as="image" href="./images/fv_marker.png" /> -->
@@ -21,10 +22,10 @@
       <section class="p-fv">
         <div class="p-fv__container">
           <div class="p-fv__img">
-            <img src="./images/fv_gif.gif" alt="" />
+            <img src="./images/fv_gif.gif" width="206" height="366" />
             <picture>
               <source srcset="./images/fv_pc.webp" class="lozad" width="272" height="536" />
-              <img src="./images/fv_pc.png" class="lozad" width="272" height="536" alt="この472文字の原稿から作られた59秒の広告 売上 72,150,300円" />
+              <img data-src="./images/fv_pc.png" class="lozad" width="272" height="536" alt="この472文字の原稿から作られた59秒の広告 売上 72,150,300円" />
             </picture>
           </div>
           <div class="p-fv__text">
@@ -74,7 +75,7 @@
         <div class="p-video__wrapper">
           <div style="padding: 56.25% 0 0 0; position: relative">
             <iframe
-              src="https://player.vimeo.com/video/835450538?h=1bda2f766d&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+              data-src="https://player.vimeo.com/video/835450538?h=1bda2f766d&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
               frameborder="0"
               allow="autoplay; fullscreen; picture-in-picture"
               allowfullscreen
@@ -82,7 +83,7 @@
               title="マジアフィのご案内"
             ></iframe>
           </div>
-          <script src="https://player.vimeo.com/api/player.js"></script>
+          <script data-src="https://player.vimeo.com/api/player.js"></script>
         </div>
       </section>
       <section class="p-contents">
@@ -100,8 +101,8 @@
                   社内で実際に使われてる<br />月利１０００万プレーヤーたちを<br class="u-sm--block" />育て上げた<br class="u-sm--hidden" />100本以上の<br class="u-sm--block" />社外秘学習コンテンツ
                 </h2>
                 <picture>
-                  <source srcset="./images/contents.webp" class="lozad" width="873" height="388" />
-                  <img src="./images/contents.png" class="lozad" width="873" height="388" alt="社内で実際に使われてる月利１０００万プレーヤーたちを育て上げた100本以上の社外秘学習コンテンツ" />
+                  <source data-srcset="./images/contents.webp" class="lozad" width="873" height="388" />
+                  <img data-src="./images/contents.png" class="lozad" width="873" height="388" alt="社内で実際に使われてる月利１０００万プレーヤーたちを育て上げた100本以上の社外秘学習コンテンツ" />
                 </picture>
 
                 <ul class="p-contents__package">
@@ -196,43 +197,43 @@
                   <ul class="p-contents__instractors">
                     <li class="p-contents__instractor">
                       <picture>
-                        <source srcset="./images/nagaoka.webp" width="156" height="156" class="lozad" />
-                        <img src="./images/nagaoka.png" width="156" height="156" alt="ながおか" class="lozad" />
+                        <source data-srcset="./images/nagaoka.webp" width="156" height="156" class="lozad" />
+                        <img data-src="./images/nagaoka.png" width="156" height="156" alt="ながおか" class="lozad" />
                       </picture>
                       <p data-alphabet="Nagaoka">ながおか</p>
                     </li>
                     <li class="p-contents__instractor">
                       <picture>
-                        <source srcset="./images/maruchan.webp" width="156" height="156" class="lozad" />
-                        <img src="./images/maruchan.png" width="156" height="156" alt="まるちゃん" class="lozad" />
+                        <source data-srcset="./images/maruchan.webp" width="156" height="156" class="lozad" />
+                        <img data-src="./images/maruchan.png" width="156" height="156" alt="まるちゃん" class="lozad" />
                       </picture>
                       <p data-alphabet="Maruchan">まるちゃん</p>
                     </li>
                     <li class="p-contents__instractor">
                       <picture>
-                        <source srcset="./images/go-shi.webp" width="156" height="156" class="lozad" />
-                        <img src="./images/go-shi.png" width="156" height="156" alt="ゴーシ" class="lozad" />
+                        <source data-srcset="./images/go-shi.webp" width="156" height="156" class="lozad" />
+                        <img data-src="./images/go-shi.png" width="156" height="156" alt="ゴーシ" class="lozad" />
                       </picture>
                       <p data-alphabet="Go-shi">ゴーシ</p>
                     </li>
                     <li class="p-contents__instractor">
                       <picture>
-                        <source srcset="./images/ando.webp" width="156" height="156" class="lozad" />
-                        <img src="./images/ando.png" width="156" height="156" alt="あんどー" class="lozad" />
+                        <source data-srcset="./images/ando.webp" width="156" height="156" class="lozad" />
+                        <img data-src="./images/ando.png" width="156" height="156" alt="あんどー" class="lozad" />
                       </picture>
                       <p data-alphabet="Ando">あんどー</p>
                     </li>
                     <li class="p-contents__instractor">
                       <picture>
-                        <source srcset="./images/depure.webp" width="156" height="156" class="lozad" />
-                        <img src="./images/depure.png" width="156" height="156" alt="でぷれ" class="lozad" />
+                        <source data-srcset="./images/depure.webp" width="156" height="156" class="lozad" />
+                        <img data-src="./images/depure.png" width="156" height="156" alt="でぷれ" class="lozad" />
                       </picture>
                       <p data-alphabet="Depure">でぷれ</p>
                     </li>
                     <li class="p-contents__instractor">
                       <picture>
-                        <source srcset="./images/ken.webp" width="156" height="156" class="lozad" />
-                        <img src="./images/ken.png" width="156" height="156" alt="ケン" class="lozad" />
+                        <source data-srcset="./images/ken.webp" width="156" height="156" class="lozad" />
+                        <img data-src="./images/ken.png" width="156" height="156" alt="ケン" class="lozad" />
                       </picture>
                       <p data-alphabet="Ken">ケン</p>
                     </li>
@@ -273,32 +274,32 @@
                   <div class="swiper-wrapper">
                     <div class="swiper-slide">
                       <picture>
-                        <source srcset="./images/slide1.webp" class="lozad" width="327" height="423" />
-                        <img src="./images/slide1.jpg" class="lozad" width="327" height="423" alt="過去HITした広告動画の共通点がわかりました！！" />
+                        <source data-srcset="./images/slide1.webp" class="lozad" width="327" height="423" />
+                        <img data-src="./images/slide1.jpg" class="lozad" width="327" height="423" alt="過去HITした広告動画の共通点がわかりました！！" />
                       </picture>
                     </div>
                     <div class="swiper-slide">
                       <picture>
-                        <source srcset="./images/slide2.webp" class="lozad" width="327" height="423" />
-                        <img src="./images/slide2.jpg" class="lozad" width="327" height="423" alt="この動画広告好調なので横展開オススメです！！" />
+                        <source data-srcset="./images/slide2.webp" class="lozad" width="327" height="423" />
+                        <img data-src="./images/slide2.jpg" class="lozad" width="327" height="423" alt="この動画広告好調なので横展開オススメです！！" />
                       </picture>
                     </div>
                     <div class="swiper-slide">
                       <picture>
-                        <source srcset="./images/slide3.webp" class="lozad" width="327" height="423" />
-                        <img src="./images/slide3.jpg" class="lozad" width="327" height="423" alt="FaceBook広告で100万円/1日を使った結果をシェアします！！" />
+                        <source data-srcset="./images/slide3.webp" class="lozad" width="327" height="423" />
+                        <img data-src="./images/slide3.jpg" class="lozad" width="327" height="423" alt="FaceBook広告で100万円/1日を使った結果をシェアします！！" />
                       </picture>
                     </div>
                     <div class="swiper-slide">
                       <picture>
-                        <source srcset="./images/slide4.webp" class="lozad" width="327" height="423" />
-                        <img src="./images/slide4.jpg" class="lozad" width="327" height="423" alt="210万円の利益を出した動画広告を作るコツを教えます！！" />
+                        <source data-srcset="./images/slide4.webp" class="lozad" width="327" height="423" />
+                        <img data-src="./images/slide4.jpg" class="lozad" width="327" height="423" alt="210万円の利益を出した動画広告を作るコツを教えます！！" />
                       </picture>
                     </div>
                     <div class="swiper-slide">
                       <picture>
-                        <source srcset="./images/slide5.webp" class="lozad" width="327" height="423" />
-                        <img src="./images/slide5.jpg" class="lozad" width="327" height="423" alt="人間の欲求に深く刺す方法がわかりました！！" />
+                        <source data-srcset="./images/slide5.webp" class="lozad" width="327" height="423" />
+                        <img data-src="./images/slide5.jpg" class="lozad" width="327" height="423" alt="人間の欲求に深く刺す方法がわかりました！！" />
                       </picture>
                     </div>
                   </div>
@@ -386,8 +387,8 @@
                 校長　ながおか<span>Head Teacher<br />Nagaoka</span>
               </p>
               <picture class="p-teachers__thumb">
-                <source srcset="./images/nagaoka_t.webp" class="lozad" />
-                <img src="./images/nagaoka_t.jpg" class="lozad" />
+                <source data-srcset="./images/nagaoka_t.webp" class="lozad" width="965" height="481" />
+                <img data-src="./images/nagaoka_t.jpg" class="lozad" width="965" height="481" />
               </picture>
               <div class="p-teachers__body">
                 <p>ポンプ工場で勤務していた元サラリーマン。</p>
@@ -410,8 +411,8 @@
               <li class="p-teachers__item">
                 <p class="p-teachers__item-name">まるちゃん<span>Maruchan</span></p>
                 <picture class="p-teachers__item-thumb">
-                  <source srcset="./images/maruchan_t.webp" class="lozad" />
-                  <img src="./images/maruchan_t.jpg" class="lozad" />
+                  <source data-srcset="./images/maruchan_t.webp" class="lozad" width="472" height="314" />
+                  <img data-src="./images/maruchan_t.jpg" class="lozad" width="472" height="314" />
                 </picture>
                 <p class="p-teachers__item-body">
                   アドアフィ初心者でアドアフィチームへ<br />
@@ -424,8 +425,8 @@
               <li class="p-teachers__item">
                 <p class="p-teachers__item-name">ゴーシ<span>Go-shi</span></p>
                 <picture class="p-teachers__item-thumb">
-                  <source srcset="./images/go-shi_t.webp" class="lozad" />
-                  <img src="./images/go-shi_t.jpg" class="lozad" />
+                  <source data-srcset="./images/go-shi_t.webp" class="lozad" width="472" height="314" />
+                  <img data-src="./images/go-shi_t.jpg" class="lozad" width="472" height="314" />
                 </picture>
                 <p class="p-teachers__item-body">
                   国内最大級のアフィリエイトスクール<br />
@@ -440,8 +441,8 @@
               <li class="p-teachers__item">
                 <p class="p-teachers__item-name">あんどー<span>Ando</span></p>
                 <picture class="p-teachers__item-thumb">
-                  <source srcset="./images/ando_t.webp" class="lozad" />
-                  <img src="./images/ando_t.jpg" class="lozad" />
+                  <source data-srcset="./images/ando_t.webp" class="lozad" width="471" height="314" />
+                  <img data-src="./images/ando_t.jpg" class="lozad" width="471" height="314" />
                 </picture>
                 <p class="p-teachers__item-body">
                   EC系アドアフィで毎月数百万の利益を<br />
@@ -455,8 +456,8 @@
               <li class="p-teachers__item">
                 <p class="p-teachers__item-name">でぷれ<span>Depure</span></p>
                 <picture class="p-teachers__item-thumb">
-                  <source srcset="./images/depure_t.webp" class="lozad" />
-                  <img src="./images/depure_t.jpg" class="lozad" />
+                  <source data-srcset="./images/depure_t.webp" class="lozad" width="472" height="314" />
+                  <img data-src="./images/depure_t.jpg" class="lozad" width="472" height="314" />
                 </picture>
                 <p class="p-teachers__item-body">
                   ずば抜けたアイデア力が特徴の<br />
@@ -471,8 +472,8 @@
               <li class="p-teachers__item">
                 <p class="p-teachers__item-name">アド皇帝<span>Ado Emperor</span></p>
                 <picture class="p-teachers__item-thumb">
-                  <source srcset="./images/ado_t.webp" class="lozad" />
-                  <img src="./images/ado_t.jpg" class="lozad" />
+                  <source data-srcset="./images/ado_t.webp" class="lozad" width="471" height="314" />
+                  <img data-src="./images/ado_t.jpg" class="lozad" width="471" height="314" />
                 </picture>
                 <p class="p-teachers__item-body">
                   ながおかアドアフィチームのリーダー。<br />
@@ -487,8 +488,8 @@
               <li class="p-teachers__item">
                 <p class="p-teachers__item-name">アドの粗利川<span>Ado-Ararikawa</span></p>
                 <picture class="p-teachers__item-thumb">
-                  <source srcset="./images/ararikawa.webp" class="lozad" />
-                  <img src="./images/ararikawa.jpg" class="lozad" />
+                  <source data-srcset="./images/ararikawa.webp" class="lozad" width="472" height="314" />
+                  <img data-src="./images/ararikawa.jpg" class="lozad" width="472" height="314" />
                 </picture>
                 <p class="p-teachers__item-body">
                   元々は組織の動画編集専門だったが<br />
@@ -506,8 +507,8 @@
                 ケン<span>Special lecturer<br />Ken</span>
               </p>
               <picture class="p-teachers__thumb">
-                <source srcset="./images/ken_t.webp" class="lozad" />
-                <img src="./images/ken_t.jpg" class="lozad" />
+                <source data-srcset="./images/ken_t.webp" class="lozad" width="965" height="481" />
+                <img data-src="./images/ken_t.jpg" class="lozad" width="965" height="481" />
               </picture>
               <div class="p-teachers__body">
                 <p>
@@ -538,8 +539,8 @@
               <div class="p-benefits__item-body">
                 <h3 class="p-benefits__item-head">マジアフィ生限定!!<br class="u-sm--block" /><span>極秘リード獲得案件</span>を扱える権利</h3>
                 <picture class="p-benefits__thumb">
-                  <source srcset="./images/benefit1.webp" class="lozad" />
-                  <img src="./images/benefit1.jpg" class="lozad" />
+                  <source data-srcset="./images/benefit1.webp" class="lozad" width="691" height="345" />
+                  <img data-src="./images/benefit1.jpg" class="lozad" width="691" height="345" />
                 </picture>
 
                 <div class="p-benefits__textarea">
@@ -608,8 +609,8 @@
               <div class="p-benefits__item-body">
                 <h3 class="p-benefits__item-head"><span>動画広告分析PRO導入サポート</span></h3>
                 <picture class="p-benefits__thumb">
-                  <source srcset="./images/benefit2.webp" class="lozad" />
-                  <img src="./images/benefit2.jpg" class="lozad" />
+                  <source data-srcset="./images/benefit2.webp" class="lozad" width="691" height="366" />
+                  <img data-src="./images/benefit2.jpg" class="lozad" width="691" height="366" />
                 </picture>
 
                 <div class="p-benefits__textarea">
@@ -676,8 +677,8 @@
               <div class="p-benefits__item-body">
                 <h3 class="p-benefits__item-head">ながおかとの事業相談</h3>
                 <picture class="p-benefits__thumb">
-                  <source srcset="./images/benefit3.webp" class="lozad" />
-                  <img src="./images/benefit3.jpg" class="lozad" />
+                  <source data-srcset="./images/benefit3.webp" class="lozad" width="691" height="345" />
+                  <img data-src="./images/benefit3.jpg" class="lozad" width="691" height="345" />
                 </picture>
 
                 <div class="p-benefits__textarea">
@@ -715,12 +716,12 @@
 
         <div class="p-recommend__account-wrapper">
           <picture class="u-sm--hidden">
-            <source srcset="./images/accounts.webp" class="lozad" width="966" height="574" />
-            <img src="./images/accounts.png" class="lozad" width="966" height="574" />
+            <source data-srcset="./images/accounts.webp" class="lozad" width="966" height="574" />
+            <img data-src="./images/accounts.png" class="lozad" width="966" height="574" />
           </picture>
           <picture class="u-sm--block">
-            <source srcset="./images/accounts_sp.webp" class="lozad" width="681" height="1560" />
-            <img src="./images/accounts_sp.png" class="lozad" width="681" height="1560" />
+            <source data-srcset="./images/accounts_sp.webp" class="lozad" width="681" height="1560" />
+            <img data-src="./images/accounts_sp.png" class="lozad" width="681" height="1560" />
           </picture>
         </div>
 
@@ -732,20 +733,20 @@
                   <span class="marker"
                     >アドアフィ市場にかつてない分析ツールを生み出し
                     <picture>
-                      <source srcset="./images/pink_marker.webp" class="lozad" width="681" height="21" />
-                      <img src="./images/pink_marker.png" class="lozad" width="681" height="21" /> </picture></span
+                      <source data-srcset="./images/pink_marker.webp" class="lozad" width="681" height="21" />
+                      <img data-src="./images/pink_marker.png" class="lozad" width="681" height="21" /> </picture></span
                   ><br />
                   <span class="marker"
                     >イノベーションを起こした
                     <picture>
-                      <source srcset="./images/pink_marker.webp" class="lozad" width="353" height="21" />
-                      <img src="./images/pink_marker.png" class="lozad" width="353" height="21" /> </picture></span
+                      <source data-srcset="./images/pink_marker.webp" class="lozad" width="353" height="21" />
+                      <img data-src="./images/pink_marker.png" class="lozad" width="353" height="21" /> </picture></span
                   ><br />
                   <span class="marker"
                     >Goodを捨て、Greatのみを愛する男
                     <picture>
-                      <source srcset="./images/pink_marker.webp" class="lozad" width="486" height="21" />
-                      <img src="./images/pink_marker.png" class="lozad" width="486" height="21" /> </picture
+                      <source data-srcset="./images/pink_marker.webp" class="lozad" width="486" height="21" />
+                      <img data-src="./images/pink_marker.png" class="lozad" width="486" height="21" /> </picture
                   ></span>
                 </p>
               </h3>
@@ -754,26 +755,26 @@
                   <span class="marker"
                     >アドアフィ市場にかつてない
                     <picture>
-                      <source srcset="./images/pink_marker.webp" class="lozad" width="498" height="21" />
-                      <img src="./images/pink_marker.png" class="lozad" width="498" height="21" /> </picture></span
+                      <source data-srcset="./images/pink_marker.webp" class="lozad" width="498" height="21" />
+                      <img data-src="./images/pink_marker.png" class="lozad" width="498" height="21" /> </picture></span
                   ><br />
                   <span class="marker"
                     >分析ツールを生み出し
                     <picture>
-                      <source srcset="./images/pink_marker.webp" class="lozad" width="385" height="21" />
-                      <img src="./images/pink_marker.png" class="lozad" width="385" height="21" /> </picture></span
+                      <source data-srcset="./images/pink_marker.webp" class="lozad" width="385" height="21" />
+                      <img data-src="./images/pink_marker.png" class="lozad" width="385" height="21" /> </picture></span
                   ><br />
                   <span class="marker"
                     >イノベーションを起こした
                     <picture>
-                      <source srcset="./images/pink_marker.webp" class="lozad" width="457" height="21" />
-                      <img src="./images/pink_marker.png" class="lozad" width="457" height="21" /> </picture></span
+                      <source data-srcset="./images/pink_marker.webp" class="lozad" width="457" height="21" />
+                      <img data-src="./images/pink_marker.png" class="lozad" width="457" height="21" /> </picture></span
                   ><br />
                   <span class="marker"
                     >Goodを捨て、Greatのみを愛する男
                     <picture>
-                      <source srcset="./images/pink_marker.webp" class="lozad" width="630" height="21" />
-                      <img src="./images/pink_marker.png" class="lozad" width="630" height="21" /> </picture
+                      <source data-srcset="./images/pink_marker.webp" class="lozad" width="630" height="21" />
+                      <img data-src="./images/pink_marker.png" class="lozad" width="630" height="21" /> </picture
                   ></span>
                 </p>
               </h3>
@@ -781,8 +782,8 @@
 
               <div class="p-recommend__item-twitter-wrapper">
                 <picture class="p-recommend__item-twitter">
-                  <source srcset="./images/paku.webp" class="lozad" width="432" height="309" />
-                  <img src="./images/paku.jpg" class="lozad" width="432" height="309" alt="パクのTwitterアカウント" />
+                  <source data-srcset="./images/paku.webp" class="lozad" width="432" height="309" />
+                  <img data-src="./images/paku.jpg" class="lozad" width="432" height="309" alt="パクのTwitterアカウント" />
                 </picture>
               </div>
 
@@ -836,20 +837,20 @@
                   <span class="marker"
                     >【悪用厳禁】な洗脳ライティングで
                     <picture>
-                      <source srcset="./images/pink_marker.webp" class="lozad" width="474" height="21" />
-                      <img src="./images/pink_marker.png" class="lozad" width="474" height="21" /> </picture></span
+                      <source data-srcset="./images/pink_marker.webp" class="lozad" width="474" height="21" />
+                      <img data-src="./images/pink_marker.png" class="lozad" width="474" height="21" /> </picture></span
                   ><br />
                   <span class="marker"
                     >文字通り文字だけで30億以上を売り上げてきた
                     <picture>
-                      <source srcset="./images/pink_marker.webp" class="lozad" width="629" height="21" />
-                      <img src="./images/pink_marker.png" class="lozad" width="629" height="21" /> </picture></span
+                      <source data-srcset="./images/pink_marker.webp" class="lozad" width="629" height="21" />
+                      <img data-src="./images/pink_marker.png" class="lozad" width="629" height="21" /> </picture></span
                   ><br />
                   <span class="marker"
                     >ザ・セールスコピーライター
                     <picture>
-                      <source srcset="./images/pink_marker.webp" class="lozad" width="384" height="21" />
-                      <img src="./images/pink_marker.png" class="lozad" width="384" height="21" /> </picture
+                      <source data-srcset="./images/pink_marker.webp" class="lozad" width="384" height="21" />
+                      <img data-src="./images/pink_marker.png" class="lozad" width="384" height="21" /> </picture
                   ></span>
                 </p>
               </h3>
@@ -858,26 +859,26 @@
                   <span class="marker"
                     >【悪用厳禁】な洗脳ライティングで
                     <picture>
-                      <source srcset="./images/pink_marker.webp" class="lozad" width="369" height="21" />
-                      <img src="./images/pink_marker.png" class="lozad" width="369" height="21" /> </picture></span
+                      <source data-srcset="./images/pink_marker.webp" class="lozad" width="369" height="21" />
+                      <img data-src="./images/pink_marker.png" class="lozad" width="369" height="21" /> </picture></span
                   ><br />
                   <span class="marker"
                     >文字通り文字だけで30億以上を
                     <picture>
-                      <source srcset="./images/pink_marker.webp" class="lozad" width="327" height="21" />
-                      <img src="./images/pink_marker.png" class="lozad" width="327" height="21" /> </picture></span
+                      <source data-srcset="./images/pink_marker.webp" class="lozad" width="327" height="21" />
+                      <img data-src="./images/pink_marker.png" class="lozad" width="327" height="21" /> </picture></span
                   ><br />
                   <span class="marker"
                     >売り上げてきた
                     <picture>
-                      <source srcset="./images/pink_marker.webp" class="lozad" width="162" height="21" />
-                      <img src="./images/pink_marker.png" class="lozad" width="162" height="21" /> </picture></span
+                      <source data-srcset="./images/pink_marker.webp" class="lozad" width="162" height="21" />
+                      <img data-src="./images/pink_marker.png" class="lozad" width="162" height="21" /> </picture></span
                   ><br />
                   <span class="marker"
                     >ザ・セールスコピーライター
                     <picture>
-                      <source srcset="./images/pink_marker.webp" class="lozad" width="299" height="21" />
-                      <img src="./images/pink_marker.png" class="lozad" width="299" height="21" /> </picture
+                      <source data-srcset="./images/pink_marker.webp" class="lozad" width="299" height="21" />
+                      <img data-src="./images/pink_marker.png" class="lozad" width="299" height="21" /> </picture
                   ></span>
                 </p>
               </h3>
@@ -886,8 +887,8 @@
 
               <div class="p-recommend__item-twitter-wrapper">
                 <picture class="p-recommend__item-twitter">
-                  <source srcset="./images/fujiuma.webp" class="lozad" width="432" height="309" />
-                  <img src="./images/fujiuma.jpg" class="lozad" width="432" height="309" alt="ふじうまのTwitterアカウント" />
+                  <source data-srcset="./images/fujiuma.webp" class="lozad" width="432" height="309" />
+                  <img data-src="./images/fujiuma.jpg" class="lozad" width="432" height="309" alt="ふじうまのTwitterアカウント" />
                 </picture>
               </div>
 
@@ -994,14 +995,14 @@
                   <span class="marker"
                     >日予算100万円以上を広告に投下する
                     <picture>
-                      <source srcset="./images/pink_marker.webp" class="lozad" width="497" height="21" />
-                      <img src="./images/pink_marker.png" class="lozad" width="497" height="21" /> </picture></span
+                      <source data-srcset="./images/pink_marker.webp" class="lozad" width="497" height="21" />
+                      <img data-src="./images/pink_marker.png" class="lozad" width="497" height="21" /> </picture></span
                   ><br />
                   <span class="marker"
                     >アドアフィソロプレイヤー/もう一人のパク
                     <picture>
-                      <source srcset="./images/pink_marker.webp" class="lozad" width="577" height="21" />
-                      <img src="./images/pink_marker.png" class="lozad" width="577" height="21" /> </picture></span
+                      <source data-srcset="./images/pink_marker.webp" class="lozad" width="577" height="21" />
+                      <img data-src="./images/pink_marker.png" class="lozad" width="577" height="21" /> </picture></span
                   ><br />
                 </p>
               </h3>
@@ -1010,20 +1011,20 @@
                   <span class="marker"
                     >日予算100万円以上を広告に投下する
                     <picture>
-                      <source srcset="./images/pink_marker.webp" class="lozad" width="497" height="21" />
-                      <img src="./images/pink_marker.png" class="lozad" width="497" height="21" /> </picture></span
+                      <source data-srcset="./images/pink_marker.webp" class="lozad" width="497" height="21" />
+                      <img data-src="./images/pink_marker.png" class="lozad" width="497" height="21" /> </picture></span
                   ><br />
                   <span class="marker"
                     >アドアフィソロプレイヤー/
                     <picture>
-                      <source srcset="./images/pink_marker.webp" class="lozad" width="577" height="21" />
-                      <img src="./images/pink_marker.png" class="lozad" width="577" height="21" /> </picture></span
+                      <source data-srcset="./images/pink_marker.webp" class="lozad" width="577" height="21" />
+                      <img data-src="./images/pink_marker.png" class="lozad" width="577" height="21" /> </picture></span
                   ><br />
                   <span class="marker"
                     >もう一人のパク
                     <picture>
-                      <source srcset="./images/pink_marker.webp" class="lozad" width="577" height="21" />
-                      <img src="./images/pink_marker.png" class="lozad" width="577" height="21" /> </picture></span
+                      <source data-srcset="./images/pink_marker.webp" class="lozad" width="577" height="21" />
+                      <img data-src="./images/pink_marker.png" class="lozad" width="577" height="21" /> </picture></span
                   ><br />
                 </p>
               </h3>
@@ -1032,8 +1033,8 @@
 
               <div class="p-recommend__item-twitter-wrapper">
                 <picture class="p-recommend__item-twitter">
-                  <source srcset="./images/pakuserori.webp" class="lozad" width="432" height="309" />
-                  <img src="./images/pakuserori.jpg" class="lozad" width="432" height="309" alt="パクセロリのTwitterアカウント" />
+                  <source data-srcset="./images/pakuserori.webp" class="lozad" width="432" height="309" />
+                  <img data-src="./images/pakuserori.jpg" class="lozad" width="432" height="309" alt="パクセロリのTwitterアカウント" />
                 </picture>
               </div>
 
@@ -1088,14 +1089,14 @@
                   <span class="marker">
                     バグレベルのライティング技術で
                     <picture>
-                      <source srcset="./images/pink_marker.webp" class="lozad" width="443" height="21" />
-                      <img src="./images/pink_marker.png" class="lozad" width="443" height="21" /> </picture></span
+                      <source data-srcset="./images/pink_marker.webp" class="lozad" width="443" height="21" />
+                      <img data-src="./images/pink_marker.png" class="lozad" width="443" height="21" /> </picture></span
                   ><br />
                   <span class="marker">
                     Brain1位を独占し続けた女王めあり
                     <picture>
-                      <source srcset="./images/pink_marker.webp" class="lozad" width="483" height="21" />
-                      <img src="./images/pink_marker.png" class="lozad" width="483" height="21" /> </picture
+                      <source data-srcset="./images/pink_marker.webp" class="lozad" width="483" height="21" />
+                      <img data-src="./images/pink_marker.png" class="lozad" width="483" height="21" /> </picture
                   ></span>
                 </p>
               </h3>
@@ -1104,8 +1105,8 @@
 
               <div class="p-recommend__item-twitter-wrapper">
                 <picture class="p-recommend__item-twitter">
-                  <source srcset="./images/meari.webp" class="lozad" width="432" height="309" />
-                  <img src="./images/meari.jpg" class="lozad" width="432" height="309" alt="めありのTwitterアカウント" />
+                  <source data-srcset="./images/meari.webp" class="lozad" width="432" height="309" />
+                  <img data-src="./images/meari.jpg" class="lozad" width="432" height="309" alt="めありのTwitterアカウント" />
                 </picture>
               </div>
 
@@ -1185,20 +1186,20 @@
                   <span class="marker">
                     女性が共感して涙するライティング技術で
                     <picture>
-                      <source srcset="./images/pink_marker.webp" class="lozad" width="559" height="21" />
-                      <img src="./images/pink_marker.png" class="lozad" width="559" height="21" /> </picture></span
+                      <source data-srcset="./images/pink_marker.webp" class="lozad" width="559" height="21" />
+                      <img data-src="./images/pink_marker.png" class="lozad" width="559" height="21" /> </picture></span
                   ><br />
                   <span class="marker">
                     集客から販売まで自動化し
                     <picture>
-                      <source srcset="./images/pink_marker.webp" class="lozad" width="356" height="21" />
-                      <img src="./images/pink_marker.png" class="lozad" width="356" height="21" /> </picture></span
+                      <source data-srcset="./images/pink_marker.webp" class="lozad" width="356" height="21" />
+                      <img data-src="./images/pink_marker.png" class="lozad" width="356" height="21" /> </picture></span
                   ><br />
                   <span class="marker">
                     旦那をヒモ化した2児の母
                     <picture>
-                      <source srcset="./images/pink_marker.webp" class="lozad" width="344" height="21" />
-                      <img src="./images/pink_marker.png" class="lozad" width="344" height="21" /> </picture
+                      <source data-srcset="./images/pink_marker.webp" class="lozad" width="344" height="21" />
+                      <img data-src="./images/pink_marker.png" class="lozad" width="344" height="21" /> </picture
                   ></span>
                 </p>
               </h3>
@@ -1207,26 +1208,26 @@
                   <span class="marker">
                     女性が共感して涙する
                     <picture>
-                      <source srcset="./images/pink_marker.webp" class="lozad" />
-                      <img src="./images/pink_marker.png" class="lozad" width="559" height="21" /> </picture></span
+                      <source data-srcset="./images/pink_marker.webp" class="lozad" />
+                      <img data-src="./images/pink_marker.png" class="lozad" width="559" height="21" /> </picture></span
                   ><br />
                   <span class="marker">
                     ライティング技術で
                     <picture>
-                      <source srcset="./images/pink_marker.webp" class="lozad" width="345" height="21" />
-                      <img src="./images/pink_marker.png" class="lozad" width="345" height="21" /> </picture></span
+                      <source data-srcset="./images/pink_marker.webp" class="lozad" width="345" height="21" />
+                      <img data-src="./images/pink_marker.png" class="lozad" width="345" height="21" /> </picture></span
                   ><br />
                   <span class="marker">
                     集客から販売まで自動化し
                     <picture>
-                      <source srcset="./images/pink_marker.webp" class="lozad" width="462" height="21" />
-                      <img src="./images/pink_marker.png" class="lozad" width="462" height="21" /> </picture></span
+                      <source data-srcset="./images/pink_marker.webp" class="lozad" width="462" height="21" />
+                      <img data-src="./images/pink_marker.png" class="lozad" width="462" height="21" /> </picture></span
                   ><br />
                   <span class="marker">
                     旦那をヒモ化した2児の母
                     <picture>
-                      <source srcset="./images/pink_marker.webp" class="lozad" width="446" height="21" />
-                      <img src="./images/pink_marker.png" class="lozad" width="446" height="21" /> </picture
+                      <source data-srcset="./images/pink_marker.webp" class="lozad" width="446" height="21" />
+                      <img data-src="./images/pink_marker.png" class="lozad" width="446" height="21" /> </picture
                   ></span>
                 </p>
               </h3>
@@ -1235,8 +1236,8 @@
 
               <div class="p-recommend__item-twitter-wrapper">
                 <picture class="p-recommend__item-twitter">
-                  <source srcset="./images/uto.webp" class="lozad" width="432" height="309" />
-                  <img src="./images/uto.jpg" class="lozad" width="432" height="309" alt="うとのTwitterアカウント" />
+                  <source data-srcset="./images/uto.webp" class="lozad" width="432" height="309" />
+                  <img data-src="./images/uto.jpg" class="lozad" width="432" height="309" alt="うとのTwitterアカウント" />
                 </picture>
               </div>
 
@@ -1294,20 +1295,20 @@
                   <span class="marker">
                     Youtube広告で毎月数千万円投下し
                     <picture>
-                      <source srcset="./images/pink_marker.webp" class="lozad" width="479" height="21" />
-                      <img src="./images/pink_marker.png" class="lozad" width="479" height="21" /> </picture></span
+                      <source data-srcset="./images/pink_marker.webp" class="lozad" width="479" height="21" />
+                      <img data-src="./images/pink_marker.png" class="lozad" width="479" height="21" /> </picture></span
                   ><br />
                   <span class="marker">
                     芸能人よりも有名になり仮面を着けた
                     <picture>
-                      <source srcset="./images/pink_marker.webp" class="lozad" width="505" height="21" />
-                      <img src="./images/pink_marker.png" class="lozad" width="505" height="21" /> </picture></span
+                      <source data-srcset="./images/pink_marker.webp" class="lozad" width="505" height="21" />
+                      <img data-src="./images/pink_marker.png" class="lozad" width="505" height="21" /> </picture></span
                   ><br />
                   <span class="marker">
                     圧倒的実業家
                     <picture>
-                      <source srcset="./images/pink_marker.webp" class="lozad" width="178" height="21" />
-                      <img src="./images/pink_marker.png" class="lozad" width="178" height="21" /> </picture
+                      <source data-srcset="./images/pink_marker.webp" class="lozad" width="178" height="21" />
+                      <img data-src="./images/pink_marker.png" class="lozad" width="178" height="21" /> </picture
                   ></span>
                 </p>
               </h3>
@@ -1316,8 +1317,8 @@
 
               <div class="p-recommend__item-twitter-wrapper">
                 <picture class="p-recommend__item-twitter">
-                  <source srcset="./images/hauru.webp" class="lozad" width="432" height="309" />
-                  <img src="./images/hauru.jpg" class="lozad" width="432" height="309" alt="ハウルのTwitterアカウント" />
+                  <source data-srcset="./images/hauru.webp" class="lozad" width="432" height="309" />
+                  <img data-src="./images/hauru.jpg" class="lozad" width="432" height="309" alt="ハウルのTwitterアカウント" />
                 </picture>
               </div>
 
@@ -1393,14 +1394,14 @@
                   <span class="marker">
                     人間の未知への探求を続ける研究者
                     <picture>
-                      <source srcset="./images/pink_marker.webp" class="lozad" width="475" height="21" />
-                      <img src="./images/pink_marker.png" class="lozad" width="475" height="21" /> </picture></span
+                      <source data-srcset="./images/pink_marker.webp" class="lozad" width="475" height="21" />
+                      <img data-src="./images/pink_marker.png" class="lozad" width="475" height="21" /> </picture></span
                   ><br />
                   <span class="marker">
                     古くからの友人であり、マーケティング界の重鎮
                     <picture>
-                      <source srcset="./images/pink_marker.webp" class="lozad" width="652" height="21" />
-                      <img src="./images/pink_marker.png" class="lozad" width="652" height="21" /> </picture
+                      <source data-srcset="./images/pink_marker.webp" class="lozad" width="652" height="21" />
+                      <img data-src="./images/pink_marker.png" class="lozad" width="652" height="21" /> </picture
                   ></span>
                 </p>
               </h3>
@@ -1409,20 +1410,20 @@
                   <span class="marker">
                     人間の未知への探求を続ける研究者
                     <picture>
-                      <source srcset="./images/pink_marker.webp" class="lozad" width="616" height="21" />
-                      <img src="./images/pink_marker.png" class="lozad" width="616" height="21" /> </picture></span
+                      <source data-srcset="./images/pink_marker.webp" class="lozad" width="616" height="21" />
+                      <img data-src="./images/pink_marker.png" class="lozad" width="616" height="21" /> </picture></span
                   ><br />
                   <span class="marker">
                     古くからの友人であり、
                     <picture>
-                      <source srcset="./images/pink_marker.webp" class="lozad" width="423" height="21" />
-                      <img src="./images/pink_marker.png" class="lozad" width="423" height="21" /> </picture></span
+                      <source data-srcset="./images/pink_marker.webp" class="lozad" width="423" height="21" />
+                      <img data-src="./images/pink_marker.png" class="lozad" width="423" height="21" /> </picture></span
                   ><br />
                   <span class="marker">
                     マーケティング界の重鎮
                     <picture>
-                      <source srcset="./images/pink_marker.webp" class="lozad" width="423" height="21" />
-                      <img src="./images/pink_marker.png" class="lozad" width="423" height="21" /> </picture
+                      <source data-srcset="./images/pink_marker.webp" class="lozad" width="423" height="21" />
+                      <img data-src="./images/pink_marker.png" class="lozad" width="423" height="21" /> </picture
                   ></span>
                 </p>
               </h3>
@@ -1431,8 +1432,8 @@
 
               <div class="p-recommend__item-twitter-wrapper">
                 <picture class="p-recommend__item-twitter">
-                  <source srcset="./images/eruru.webp" class="lozad" width="432" height="309" />
-                  <img src="./images/eruru.jpg" class="lozad" width="432" height="309" alt="えるるのTwitterアカウント" />
+                  <source data-srcset="./images/eruru.webp" class="lozad" width="432" height="309" />
+                  <img data-src="./images/eruru.jpg" class="lozad" width="432" height="309" alt="えるるのTwitterアカウント" />
                 </picture>
               </div>
 
@@ -1500,14 +1501,14 @@
                   <span class="marker">
                     人間の未知への探求を続ける研究者
                     <picture>
-                      <source srcset="./images/pink_marker.webp" class="lozad" width="475" height="21" />
-                      <img src="./images/pink_marker.png" class="lozad" width="475" height="21" /> </picture></span
+                      <source data-srcset="./images/pink_marker.webp" class="lozad" width="475" height="21" />
+                      <img data-src="./images/pink_marker.png" class="lozad" width="475" height="21" /> </picture></span
                   ><br />
                   <span class="marker">
                     古くからの友人であり、マーケティング界の重鎮
                     <picture>
-                      <source srcset="./images/pink_marker.webp" class="lozad" width="652" height="21" />
-                      <img src="./images/pink_marker.png" class="lozad" width="652" height="21" /> </picture
+                      <source data-srcset="./images/pink_marker.webp" class="lozad" width="652" height="21" />
+                      <img data-src="./images/pink_marker.png" class="lozad" width="652" height="21" /> </picture
                   ></span>
                 </p>
               </h3>
@@ -1516,20 +1517,20 @@
                   <span class="marker">
                     人間の未知への探求を続ける研究者
                     <picture>
-                      <source srcset="./images/pink_marker.webp" class="lozad" width="616" height="21" />
-                      <img src="./images/pink_marker.png" class="lozad" width="616" height="21" /> </picture></span
+                      <source data-srcset="./images/pink_marker.webp" class="lozad" width="616" height="21" />
+                      <img data-src="./images/pink_marker.png" class="lozad" width="616" height="21" /> </picture></span
                   ><br />
                   <span class="marker">
                     古くからの友人であり、
                     <picture>
-                      <source srcset="./images/pink_marker.webp" class="lozad" width="423" height="21" />
-                      <img src="./images/pink_marker.png" class="lozad" width="423" height="21" /> </picture></span
+                      <source data-srcset="./images/pink_marker.webp" class="lozad" width="423" height="21" />
+                      <img data-src="./images/pink_marker.png" class="lozad" width="423" height="21" /> </picture></span
                   ><br />
                   <span class="marker">
                     マーケティング界の重鎮
                     <picture>
-                      <source srcset="./images/pink_marker.webp" class="lozad" width="423" height="21" />
-                      <img src="./images/pink_marker.png" class="lozad" width="423" height="21" /> </picture
+                      <source data-srcset="./images/pink_marker.webp" class="lozad" width="423" height="21" />
+                      <img data-src="./images/pink_marker.png" class="lozad" width="423" height="21" /> </picture
                   ></span>
                 </p>
               </h3>
@@ -1538,8 +1539,8 @@
 
               <div class="p-recommend__item-twitter-wrapper">
                 <picture class="p-recommend__item-twitter">
-                  <source srcset="./images/eruru.webp" class="lozad" width="432" height="309" />
-                  <img src="./images/eruru.jpg" class="lozad" width="432" height="309" alt="えるるのTwitterアカウント" />
+                  <source data-srcset="./images/eruru.webp" class="lozad" width="432" height="309" />
+                  <img data-src="./images/eruru.jpg" class="lozad" width="432" height="309" alt="えるるのTwitterアカウント" />
                 </picture>
               </div>
 
@@ -1608,21 +1609,21 @@
                   <span class="marker">
                     SNSマーケティングを武器に
                     <picture>
-                      <source srcset="./images/pink_marker.webp" class="lozad" width="389" height="21" />
-                      <img src="./images/pink_marker.png" class="lozad" width="389" height="21" /> </picture></span
+                      <source data-srcset="./images/pink_marker.webp" class="lozad" width="389" height="21" />
+                      <img data-src="./images/pink_marker.png" class="lozad" width="389" height="21" /> </picture></span
                   ><br />
                   <span class="marker">
                     非常識な頭の使い方で
                     <picture>
-                      <source srcset="./images/pink_marker.webp" class="lozad" width="297" height="21" />
-                      <img src="./images/pink_marker.png" class="lozad" width="297" height="21" /> </picture
+                      <source data-srcset="./images/pink_marker.webp" class="lozad" width="297" height="21" />
+                      <img data-src="./images/pink_marker.png" class="lozad" width="297" height="21" /> </picture
                   ></span>
                   <br />
                   <span class="marker">
                     月1億を稼ぐ現役東大生
                     <picture>
-                      <source srcset="./images/pink_marker.webp" class="lozad" width="314" height="21" />
-                      <img src="./images/pink_marker.png" class="lozad" width="314" height="21" /> </picture
+                      <source data-srcset="./images/pink_marker.webp" class="lozad" width="314" height="21" />
+                      <img data-src="./images/pink_marker.png" class="lozad" width="314" height="21" /> </picture
                   ></span>
                 </p>
               </h3>
@@ -1631,8 +1632,8 @@
 
               <div class="p-recommend__item-twitter-wrapper">
                 <picture class="p-recommend__item-twitter">
-                  <source srcset="./images/mikami.webp" class="lozad" width="432" height="309" />
-                  <img src="./images/mikami.jpg" class="lozad" width="432" height="309" alt="みかみのTwitterアカウント" />
+                  <source data-srcset="./images/mikami.webp" class="lozad" width="432" height="309" />
+                  <img data-src="./images/mikami.jpg" class="lozad" width="432" height="309" alt="みかみのTwitterアカウント" />
                 </picture>
               </div>
 
@@ -1664,21 +1665,21 @@
                   <span class="marker">
                     コンテンツ販売で月500万超えの状態を手放し
                     <picture>
-                      <source srcset="./images/pink_marker.webp" class="lozad" width="617" height="21" />
-                      <img src="./images/pink_marker.png" class="lozad" width="617" height="21" /> </picture></span
+                      <source data-srcset="./images/pink_marker.webp" class="lozad" width="617" height="21" />
+                      <img data-src="./images/pink_marker.png" class="lozad" width="617" height="21" /> </picture></span
                   ><br />
                   <span class="marker">
                     月間億を超える広告費を投下する
                     <picture>
-                      <source srcset="./images/pink_marker.webp" class="lozad" width="444" height="21" />
-                      <img src="./images/pink_marker.png" class="lozad" width="444" height="21" /> </picture
+                      <source data-srcset="./images/pink_marker.webp" class="lozad" width="444" height="21" />
+                      <img data-src="./images/pink_marker.png" class="lozad" width="444" height="21" /> </picture
                   ></span>
                   <br />
                   <span class="marker">
                     ベンチャーの事業責任者へと転生したミスストイック
                     <picture>
-                      <source srcset="./images/pink_marker.webp" class="lozad" width="712" height="21" />
-                      <img src="./images/pink_marker.png" class="lozad" width="712" height="21" /> </picture
+                      <source data-srcset="./images/pink_marker.webp" class="lozad" width="712" height="21" />
+                      <img data-src="./images/pink_marker.png" class="lozad" width="712" height="21" /> </picture
                   ></span>
                 </p>
               </h3>
@@ -1687,27 +1688,27 @@
                   <span class="marker">
                     コンテンツ販売で月500万超えの
                     <picture>
-                      <source srcset="./images/pink_marker.webp" class="lozad" width="568" height="21" />
-                      <img src="./images/pink_marker.png" class="lozad" width="568" height="21" /> </picture></span
+                      <source data-srcset="./images/pink_marker.webp" class="lozad" width="568" height="21" />
+                      <img data-src="./images/pink_marker.png" class="lozad" width="568" height="21" /> </picture></span
                   ><br />
                   <span class="marker">
                     状態を手放し月間億を超える広告費を
                     <picture>
-                      <source srcset="./images/pink_marker.webp" class="lozad" width="654" height="21" />
-                      <img src="./images/pink_marker.png" class="lozad" width="654" height="21" /> </picture
+                      <source data-srcset="./images/pink_marker.webp" class="lozad" width="654" height="21" />
+                      <img data-src="./images/pink_marker.png" class="lozad" width="654" height="21" /> </picture
                   ></span>
                   <br />
                   <span class="marker">
                     投下する
                     <picture>
-                      <source srcset="./images/pink_marker.webp" class="lozad" width="152" height="21" />
-                      <img src="./images/pink_marker.png" class="lozad" width="152" height="21" /> </picture></span
+                      <source data-srcset="./images/pink_marker.webp" class="lozad" width="152" height="21" />
+                      <img data-src="./images/pink_marker.png" class="lozad" width="152" height="21" /> </picture></span
                   ><br />
                   <span class="marker">
                     ベンチャーの事業責任者へと
                     <picture>
-                      <source srcset="./images/pink_marker.webp" class="lozad" width="500" height="21" />
-                      <img src="./images/pink_marker.png" class="lozad" width="500" height="21" /> </picture></span
+                      <source data-srcset="./images/pink_marker.webp" class="lozad" width="500" height="21" />
+                      <img data-src="./images/pink_marker.png" class="lozad" width="500" height="21" /> </picture></span
                   ><br />
                 </p>
               </h3>
@@ -1716,8 +1717,8 @@
 
               <div class="p-recommend__item-twitter-wrapper">
                 <picture class="p-recommend__item-twitter">
-                  <source srcset="./images/puuka.webp" class="lozad" width="432" height="309" />
-                  <img src="./images/puuka.jpg" class="lozad" width="432" height="309" alt="ぷうかのTwitterアカウント" />
+                  <source data-srcset="./images/puuka.webp" class="lozad" width="432" height="309" />
+                  <img data-src="./images/puuka.jpg" class="lozad" width="432" height="309" alt="ぷうかのTwitterアカウント" />
                 </picture>
               </div>
 
@@ -1764,20 +1765,20 @@
                   <span class="marker">
                     「好きな時に好きな場所で」を
                     <picture>
-                      <source srcset="./images/pink_marker.webp" class="lozad" width="416" height="21" />
-                      <img src="./images/pink_marker.png" class="lozad" width="416" height="21" /> </picture></span
+                      <source data-srcset="./images/pink_marker.webp" class="lozad" width="416" height="21" />
+                      <img data-src="./images/pink_marker.png" class="lozad" width="416" height="21" /> </picture></span
                   ><br />
                   <span class="marker">
                     身をもって体現する
                     <picture>
-                      <source srcset="./images/pink_marker.webp" class="lozad" width="265" height="21" />
-                      <img src="./images/pink_marker.png" class="lozad" width="265" height="21" /> </picture></span
+                      <source data-srcset="./images/pink_marker.webp" class="lozad" width="265" height="21" />
+                      <img data-src="./images/pink_marker.png" class="lozad" width="265" height="21" /> </picture></span
                   ><br />
                   <span class="marker">
                     世界を飛び回る億超えマーケッター
                     <picture>
-                      <source srcset="./images/pink_marker.webp" class="lozad" width="475" height="21" />
-                      <img src="./images/pink_marker.png" class="lozad" width="475" height="21" /> </picture
+                      <source data-srcset="./images/pink_marker.webp" class="lozad" width="475" height="21" />
+                      <img data-src="./images/pink_marker.png" class="lozad" width="475" height="21" /> </picture
                   ></span>
                 </p>
               </h3>
@@ -1786,8 +1787,8 @@
 
               <div class="p-recommend__item-twitter-wrapper">
                 <picture class="p-recommend__item-twitter">
-                  <source srcset="./images/izumi.webp" class="lozad" width="432" height="309" />
-                  <img src="./images/izumi.jpg" class="lozad" width="432" height="309" alt="いずみのTwitterアカウント" />
+                  <source data-srcset="./images/izumi.webp" class="lozad" width="432" height="309" />
+                  <img data-src="./images/izumi.jpg" class="lozad" width="432" height="309" alt="いずみのTwitterアカウント" />
                 </picture>
               </div>
 
@@ -1854,20 +1855,20 @@
                   <span class="marker">
                     常にマーケティングを研究し
                     <picture>
-                      <source srcset="./images/pink_marker.webp" class="lozad" width="385" height="21" />
-                      <img src="./images/pink_marker.png" class="lozad" width="385" height="21" /> </picture></span
+                      <source data-srcset="./images/pink_marker.webp" class="lozad" width="385" height="21" />
+                      <img data-src="./images/pink_marker.png" class="lozad" width="385" height="21" /> </picture></span
                   ><br />
                   <span class="marker">
                     独自の分析結果を元に事業を展開する
                     <picture>
-                      <source srcset="./images/pink_marker.webp" class="lozad" width="504" height="21" />
-                      <img src="./images/pink_marker.png" class="lozad" width="504" height="21" /> </picture></span
+                      <source data-srcset="./images/pink_marker.webp" class="lozad" width="504" height="21" />
+                      <img data-src="./images/pink_marker.png" class="lozad" width="504" height="21" /> </picture></span
                   ><br />
                   <span class="marker">
                     凡人を名乗る天才
                     <picture>
-                      <source srcset="./images/pink_marker.webp" class="lozad" width="238" height="21" />
-                      <img src="./images/pink_marker.png" class="lozad" width="238" height="21" /> </picture
+                      <source data-srcset="./images/pink_marker.webp" class="lozad" width="238" height="21" />
+                      <img data-src="./images/pink_marker.png" class="lozad" width="238" height="21" /> </picture
                   ></span>
                 </p>
               </h3>
@@ -1876,8 +1877,8 @@
 
               <div class="p-recommend__item-twitter-wrapper">
                 <picture class="p-recommend__item-twitter">
-                  <source srcset="./images/jey.webp" class="lozad" width="432" height="309" />
-                  <img src="./images/jey.jpg" class="lozad" width="432" height="309" alt="じぇいのTwitterアカウント" />
+                  <source data-srcset="./images/jey.webp" class="lozad" width="432" height="309" />
+                  <img data-src="./images/jey.jpg" class="lozad" width="432" height="309" alt="じぇいのTwitterアカウント" />
                 </picture>
               </div>
 
@@ -1922,14 +1923,14 @@
                   <span class="marker">
                     無料プレゼントでTwitter界隈のマーケティングレベルに
                     <picture>
-                      <source srcset="./images/pink_marker.webp" class="lozad" width="755" height="21" />
-                      <img src="./images/pink_marker.png" class="lozad" width="755" height="21" /> </picture></span
+                      <source data-srcset="./images/pink_marker.webp" class="lozad" width="755" height="21" />
+                      <img data-src="./images/pink_marker.png" class="lozad" width="755" height="21" /> </picture></span
                   ><br />
                   <span class="marker">
                     インフレを起こしたBrainローンチの先駆者
                     <picture>
-                      <source srcset="./images/pink_marker.webp" class="lozad" width="652" height="21" />
-                      <img src="./images/pink_marker.png" class="lozad" width="652" height="21" /> </picture
+                      <source data-srcset="./images/pink_marker.webp" class="lozad" width="652" height="21" />
+                      <img data-src="./images/pink_marker.png" class="lozad" width="652" height="21" /> </picture
                   ></span>
                 </p>
               </h3>
@@ -1938,26 +1939,26 @@
                   <span class="marker">
                     無料プレゼントでTwitter界隈の
                     <picture>
-                      <source srcset="./images/pink_marker.webp" class="lozad" width="421" height="21" />
-                      <img src="./images/pink_marker.png" class="lozad" width="421" height="21" /> </picture></span
+                      <source data-srcset="./images/pink_marker.webp" class="lozad" width="421" height="21" />
+                      <img data-src="./images/pink_marker.png" class="lozad" width="421" height="21" /> </picture></span
                   ><br />
                   <span class="marker">
                     マーケティングレベルに
                     <picture>
-                      <source srcset="./images/pink_marker.webp" class="lozad" width="421" height="21" />
-                      <img src="./images/pink_marker.png" class="lozad" width="421" height="21" /> </picture></span
+                      <source data-srcset="./images/pink_marker.webp" class="lozad" width="421" height="21" />
+                      <img data-src="./images/pink_marker.png" class="lozad" width="421" height="21" /> </picture></span
                   ><br />
                   <span class="marker">
                     インフレを起こしたBrainローンチの
                     <picture>
-                      <source srcset="./images/pink_marker.webp" class="lozad" width="642" height="21" />
-                      <img src="./images/pink_marker.png" class="lozad" width="642" height="21" /> </picture></span
+                      <source data-srcset="./images/pink_marker.webp" class="lozad" width="642" height="21" />
+                      <img data-src="./images/pink_marker.png" class="lozad" width="642" height="21" /> </picture></span
                   ><br />
                   <span class="marker">
                     先駆者
                     <picture>
-                      <source srcset="./images/pink_marker.webp" class="lozad" width="115" height="21" />
-                      <img src="./images/pink_marker.png" class="lozad" width="115" height="21" /> </picture
+                      <source data-srcset="./images/pink_marker.webp" class="lozad" width="115" height="21" />
+                      <img data-src="./images/pink_marker.png" class="lozad" width="115" height="21" /> </picture
                   ></span>
                 </p>
               </h3>
@@ -1966,8 +1967,8 @@
 
               <div class="p-recommend__item-twitter-wrapper">
                 <picture class="p-recommend__item-twitter">
-                  <source srcset="./images/pagu.webp" class="lozad" width="432" height="309" />
-                  <img src="./images/pagu.jpg" class="lozad" width="432" height="309" alt="パグのTwitterアカウント" />
+                  <source data-srcset="./images/pagu.webp" class="lozad" width="432" height="309" />
+                  <img data-src="./images/pagu.jpg" class="lozad" width="432" height="309" alt="パグのTwitterアカウント" />
                 </picture>
               </div>
 
@@ -2026,14 +2027,14 @@
                   <span class="marker">
                     学生起業で月利8桁をアドアフィで生み出した
                     <picture>
-                      <source srcset="./images/pink_marker.webp" class="lozad" width="610" height="21" />
-                      <img src="./images/pink_marker.png" class="lozad" width="610" height="21" /> </picture></span
+                      <source data-srcset="./images/pink_marker.webp" class="lozad" width="610" height="21" />
+                      <img data-src="./images/pink_marker.png" class="lozad" width="610" height="21" /> </picture></span
                   ><br />
                   <span class="marker">
                     Youtube広告の若き達人
                     <picture>
-                      <source srcset="./images/pink_marker.webp" class="lozad" width="331" height="21" />
-                      <img src="./images/pink_marker.png" class="lozad" width="331" height="21" /> </picture
+                      <source data-srcset="./images/pink_marker.webp" class="lozad" width="331" height="21" />
+                      <img data-src="./images/pink_marker.png" class="lozad" width="331" height="21" /> </picture
                   ></span>
                 </p>
               </h3>
@@ -2042,20 +2043,20 @@
                   <span class="marker">
                     学生起業で月利8桁をアドアフィ
                     <picture>
-                      <source srcset="./images/pink_marker.webp" class="lozad" width="559" height="21" />
-                      <img src="./images/pink_marker.png" class="lozad" width="559" height="21" /> </picture></span
+                      <source data-srcset="./images/pink_marker.webp" class="lozad" width="559" height="21" />
+                      <img data-src="./images/pink_marker.png" class="lozad" width="559" height="21" /> </picture></span
                   ><br />
                   <span class="marker">
                     で生み出した
                     <picture>
-                      <source srcset="./images/pink_marker.webp" class="lozad" width="231" height="21" />
-                      <img src="./images/pink_marker.png" class="lozad" width="231" height="21" /> </picture></span
+                      <source data-srcset="./images/pink_marker.webp" class="lozad" width="231" height="21" />
+                      <img data-src="./images/pink_marker.png" class="lozad" width="231" height="21" /> </picture></span
                   ><br />
                   <span class="marker">
                     Youtube広告の若き達人
                     <picture>
-                      <source srcset="./images/pink_marker.webp" class="lozad" width="429" height="21" />
-                      <img src="./images/pink_marker.png" class="lozad" width="429" height="21" /> </picture
+                      <source data-srcset="./images/pink_marker.webp" class="lozad" width="429" height="21" />
+                      <img data-src="./images/pink_marker.png" class="lozad" width="429" height="21" /> </picture
                   ></span>
                 </p>
               </h3>
@@ -2064,8 +2065,8 @@
 
               <div class="p-recommend__item-twitter-wrapper">
                 <picture class="p-recommend__item-twitter">
-                  <source srcset="./images/tosaken.webp" class="lozad" width="432" height="309" />
-                  <img src="./images/tosaken.jpg" class="lozad" width="432" height="309" alt="とさけんのTwitterアカウント" />
+                  <source data-srcset="./images/tosaken.webp" class="lozad" width="432" height="309" />
+                  <img data-src="./images/tosaken.jpg" class="lozad" width="432" height="309" alt="とさけんのTwitterアカウント" />
                 </picture>
               </div>
 
@@ -2120,21 +2121,21 @@
                   <span class="marker">
                     某大手配信会社から独立後
                     <picture>
-                      <source srcset="./images/pink_marker.webp" class="lozad" width="356" height="21" />
-                      <img src="./images/pink_marker.png" class="lozad" width="356" height="21" /> </picture></span
+                      <source data-srcset="./images/pink_marker.webp" class="lozad" width="356" height="21" />
+                      <img data-src="./images/pink_marker.png" class="lozad" width="356" height="21" /> </picture></span
                   ><br />
                   <span class="marker">
                     2年で売上8.7億へとグロースさせた
                     <picture>
-                      <source srcset="./images/pink_marker.webp" class="lozad" width="485" height="21" />
-                      <img src="./images/pink_marker.png" class="lozad" width="485" height="21" /> </picture
+                      <source data-srcset="./images/pink_marker.webp" class="lozad" width="485" height="21" />
+                      <img data-src="./images/pink_marker.png" class="lozad" width="485" height="21" /> </picture
                   ></span>
                   ><br />
                   <span class="marker">
                     ブラック企業出身のエリート
                     <picture>
-                      <source srcset="./images/pink_marker.webp" class="lozad" width="652" height="21" />
-                      <img src="./images/pink_marker.png" class="lozad" width="652" height="21" /> </picture
+                      <source data-srcset="./images/pink_marker.webp" class="lozad" width="652" height="21" />
+                      <img data-src="./images/pink_marker.png" class="lozad" width="652" height="21" /> </picture
                   ></span>
                 </p>
               </h3>
@@ -2143,8 +2144,8 @@
 
               <div class="p-recommend__item-twitter-wrapper">
                 <picture class="p-recommend__item-twitter">
-                  <source srcset="./images/yokota.webp" class="lozad" width="432" height="309" />
-                  <img src="./images/yokota.jpg" class="lozad" width="432" height="309" alt="Ryuichi YokotaのTwitterアカウント" />
+                  <source data-srcset="./images/yokota.webp" class="lozad" width="432" height="309" />
+                  <img data-src="./images/yokota.jpg" class="lozad" width="432" height="309" alt="Ryuichi YokotaのTwitterアカウント" />
                 </picture>
               </div>
 
@@ -2181,14 +2182,14 @@
                   <span class="marker">
                     真理に基づきコンセプトを創造する
                     <picture>
-                      <source srcset="./images/pink_marker.webp" class="lozad" width="473" height="21" />
-                      <img src="./images/pink_marker.png" class="lozad" width="473" height="21" /> </picture></span
+                      <source data-srcset="./images/pink_marker.webp" class="lozad" width="473" height="21" />
+                      <img data-src="./images/pink_marker.png" class="lozad" width="473" height="21" /> </picture></span
                   ><br />
                   <span class="marker">
                     スピリチュアル系マーケティングのサラブレッド
                     <picture>
-                      <source srcset="./images/pink_marker.webp" class="lozad" width="648" height="21" />
-                      <img src="./images/pink_marker.png" class="lozad" width="648" height="21" /> </picture
+                      <source data-srcset="./images/pink_marker.webp" class="lozad" width="648" height="21" />
+                      <img data-src="./images/pink_marker.png" class="lozad" width="648" height="21" /> </picture
                   ></span>
                 </p>
               </h3>
@@ -2197,20 +2198,20 @@
                   <span class="marker">
                     真理に基づきコンセプトを創造する
                     <picture>
-                      <source srcset="./images/pink_marker.webp" class="lozad" width="613" height="21" />
-                      <img src="./images/pink_marker.png" class="lozad" width="613" height="21" /> </picture></span
+                      <source data-srcset="./images/pink_marker.webp" class="lozad" width="613" height="21" />
+                      <img data-src="./images/pink_marker.png" class="lozad" width="613" height="21" /> </picture></span
                   ><br />
                   <span class="marker">
                     スピリチュアル系マーケティングの
                     <picture>
-                      <source srcset="./images/pink_marker.webp" class="lozad" width="610" height="21" />
-                      <img src="./images/pink_marker.png" class="lozad" width="610" height="21" /> </picture></span
+                      <source data-srcset="./images/pink_marker.webp" class="lozad" width="610" height="21" />
+                      <img data-src="./images/pink_marker.png" class="lozad" width="610" height="21" /> </picture></span
                   ><br />
                   <span class="marker">
                     サラブレッド
                     <picture>
-                      <source srcset="./images/pink_marker.webp" class="lozad" width="229" height="21" />
-                      <img src="./images/pink_marker.png" class="lozad" width="229" height="21" /> </picture
+                      <source data-srcset="./images/pink_marker.webp" class="lozad" width="229" height="21" />
+                      <img data-src="./images/pink_marker.png" class="lozad" width="229" height="21" /> </picture
                   ></span>
                 </p>
               </h3>
@@ -2219,8 +2220,8 @@
 
               <div class="p-recommend__item-twitter-wrapper">
                 <picture class="p-recommend__item-twitter">
-                  <source srcset="./images/mochiduki.webp" class="lozad" width="432" height="309" />
-                  <img src="./images/mochiduki.jpg" class="lozad" width="432" height="309" alt="望月俊亮のTwitterアカウント" />
+                  <source data-srcset="./images/mochiduki.webp" class="lozad" width="432" height="309" />
+                  <img data-src="./images/mochiduki.jpg" class="lozad" width="432" height="309" alt="望月俊亮のTwitterアカウント" />
                 </picture>
               </div>
 
@@ -2508,8 +2509,8 @@
           <div class="p-contact__btn-wrapper">
             <a href="#" class="p-contact__btn">
               <picture>
-                <source srcset="./images/btn.webp" class="lozad" width="646" height="157" />
-                <img src="./images/btn.jpg" class="lozad" width="646" height="157" alt="マジアフィリへ参加する 500,000円(税込)" />
+                <source data-srcset="./images/btn.webp" class="lozad" width="646" height="157" />
+                <img data-src="./images/btn.jpg" class="lozad" width="646" height="157" alt="マジアフィリへ参加する 500,000円(税込)" />
               </picture>
             </a>
           </div>
@@ -2529,8 +2530,8 @@
           </div>
 
           <picture>
-            <source srcset="./images/postscript_img.webp" class="lozad" width="748" height="82" />
-            <img src="./images/postscript_img.png" class="lozad" width="748" height="82" alt="知識 + コーチ + 環境" />
+            <source data-srcset="./images/postscript_img.webp" class="lozad" width="748" height="82" />
+            <img data-src="./images/postscript_img.png" class="lozad" width="748" height="82" alt="知識 + コーチ + 環境" />
           </picture>
 
           <div class="p-postscript__textarea">
@@ -2594,8 +2595,8 @@
           <div class="p-contact__btn-wrapper">
             <a href="#" class="p-contact__btn">
               <picture>
-                <source srcset="./images/btn.webp" class="lozad" width="646" height="157" />
-                <img src="./images/btn.jpg" class="lozad" width="646" height="157" alt="マジアフィリへ参加する 500,000円(税込)" />
+                <source data-srcset="./images/btn.webp" class="lozad" width="646" height="157" />
+                <img data-src="./images/btn.jpg" class="lozad" width="646" height="157" alt="マジアフィリへ参加する 500,000円(税込)" />
               </picture>
             </a>
           </div>
