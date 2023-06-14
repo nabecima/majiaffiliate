@@ -35,9 +35,23 @@
   }
 
   &__img {
+    position: relative;
+
+    > img {
+      position: absolute;
+      top: 5.1rem;
+      left: 1rem;
+      width: 20.6rem;
+    }
+
     @include mq() {
       margin: 0 auto;
       max-width: 32.9rem;
+
+      > img {
+        top: 7.3rem;
+        left: 1.5rem;
+      }
     }
   }
 
