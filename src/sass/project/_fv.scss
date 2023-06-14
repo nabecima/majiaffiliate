@@ -7,7 +7,7 @@
   background-color: #fff;
 
   @include mq() {
-    @include pt_vw(79, 750);
+    @include pt_vw(69, 750);
     @include pb_vw(190, 750);
   }
 
@@ -49,8 +49,8 @@
       max-width: 32.9rem;
 
       > img {
-        top: 7.3rem;
-        left: 1.5rem;
+        // top: 7.3rem;
+        // left: 1.5rem;
       }
     }
   }
@@ -176,7 +176,7 @@
     }
 
     @include mq() {
-      margin-top: -5%;
+      margin-top: -11%;
     }
   }
 }

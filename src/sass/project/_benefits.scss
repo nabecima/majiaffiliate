@@ -73,6 +73,8 @@
     @include mq() {
       @include pb_vw(69, 750);
       @include mb_vw(59, 750);
+      // font-size: 4.3rem;
+      @include f_vw(43, 750);
 
       &::after {
         @include w_vw(145, 750);
