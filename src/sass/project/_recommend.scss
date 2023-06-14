@@ -83,6 +83,7 @@
   }
 
   &__container {
+    @include pb_vw(225, 750);
     margin: 0 auto;
     max-width: 96.3rem;
   }
@@ -94,8 +95,10 @@
   }
 
   &__item {
-    padding-bottom: 7.5rem;
-    border-bottom: 2px dotted #5e5e5e;
+    &:not(:last-of-type) {
+      padding-bottom: 7.5rem;
+      border-bottom: 2px dotted #5e5e5e;
+    }
 
     @include mq() {
       @include pl_vw(30, 750);

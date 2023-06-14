@@ -44,6 +44,9 @@
       letter-spacing: 0.04em;
       font-weight: bold;
       text-align: center;
+      opacity: 0;
+      transform: translateY(150%);
+      transition: 0.7s;
 
       ruby {
         position: relative;
@@ -52,6 +55,11 @@
           position: absolute;
           font-size: 1.867rem;
         }
+      }
+
+      &.is-active {
+        opacity: 1;
+        transform: translateY(0);
       }
     }
 

@@ -41,16 +41,11 @@
       left: 50%;
       transform: translateX(-50%);
       display: block;
-      width: 58.4rem;
-      height: 10.1rem;
+      @include w_vw(584, 750);
+      @include h_vw(101, 750);
       background-image: url(../images/grouth_head.webp);
       background-size: cover;
       z-index: -1;
-
-      @include mq() {
-        @include w_vw(584, 750);
-        @include h_vw(101, 750);
-      }
     }
 
     > p {

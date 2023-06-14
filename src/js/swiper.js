@@ -10,6 +10,10 @@ const swiper = new Swiper(".swiper", {
   spaceBetween: 10,
   slidesPerView: 1.5,
   loopAdditionalSlides: 1,
+  autoplay: {
+    // 自動再生
+    delay: 1500 // 1.5秒後に次のスライド
+  },
 
   breakpoints: {
     500: {

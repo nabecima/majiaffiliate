@@ -1,11 +1,12 @@
 @use "../global/" as *;
 
 .p-message {
+  background-color: #fafafa;
   @include mq() {
     background-image: url(../images/message_bg-sp.webp);
     background-size: cover;
   }
-  
+
   &__container {
     position: relative;
     padding-top: 10.1rem;
