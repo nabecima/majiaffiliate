@@ -8,7 +8,8 @@ const countDownId = setInterval(() => {
   const milliseconds = getElement(".milliseconds");
 
   const currentTime = new Date().getTime();
-  const targetTime = new Date(2023, 12, 0, "23", "59", "59").getTime();
+  const targetTime = new Date("2023/6/19 23:59:59").getTime();
+  // const targetTime = new Date().getTime();
   const gap = targetTime - currentTime;
 
   if (gap <= 0) {
