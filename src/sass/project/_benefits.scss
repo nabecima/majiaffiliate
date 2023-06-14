@@ -1,28 +1,47 @@
 @use "../global/" as *;
 
 .p-benefits {
+  position: relative;
+  overflow-x: hidden;
   background-color: #fcf6eb;
 
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    // @include w_vw(1298, 1298);
+    @include w_vw(1298, 750);
+
+    @include h_vw(101, 750);
+    background-image: url(../images/benefit_head.webp);
+    background-size: cover;
+    background-position: center;
+
+    // @include mq() {
+    // }
+  }
+
   &__container {
-    position: relative;
-    overflow-x: hidden;
     @include pt_vw(98, 750);
     padding-bottom: 7.5rem;
     margin: 0 auto;
     max-width: 98.5rem;
     box-sizing: content-box;
 
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      @include w_vw(1298, 750);
-      @include h_vw(101, 750);
-      background-image: url(../images/benefit_head.webp);
-      background-size: cover;
-    }
+    // &::before {
+    //   content: "";
+    //   position: absolute;
+    //   top: 0;
+    //   left: 50%;
+    //   transform: translateX(-50%);
+    //   @include w_vw(1298, 1298);
+    //   // @include w_vw(1298, 750);
+    //   @include h_vw(101, 750);
+    //   background-image: url(../images/benefit_head.webp);
+    //   background-size: cover;
+    // }
 
     @media screen and (max-width: 1000px) {
       @include px_vw(30, 750);
