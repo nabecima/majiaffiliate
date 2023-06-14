@@ -182,11 +182,13 @@
     }
 
     @include mq() {
-      @include f_vw(32, 750);
-      line-height: calc(60px / 32px);
+      p {
+        @include f_vw(30, 750);
+        line-height: calc(60px / 32px);
 
-      &:not(:first-of-type) {
-        @include mt_vw(75, 750);
+        &:not(:first-of-type) {
+          @include mt_vw(75, 750);
+        }
       }
     }
   }

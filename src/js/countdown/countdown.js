@@ -1,3 +1,4 @@
+import timer from "./timer.json";
 const getElement = (el) => document.querySelectorAll(el);
 
 const countDownId = setInterval(() => {
@@ -8,7 +9,7 @@ const countDownId = setInterval(() => {
   const milliseconds = getElement(".milliseconds");
 
   const currentTime = new Date().getTime();
-  const targetTime = new Date("2023/6/19 23:59:59").getTime();
+  const targetTime = new Date(`${timer.year}/${timer.month}/${timer.day} 23:59:59`).getTime();
   // const targetTime = new Date().getTime();
   const gap = targetTime - currentTime;
 

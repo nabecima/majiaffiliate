@@ -3,6 +3,6 @@ import "./modernizr-custom";
 import "./lozad";
 import "./anime";
 import "./swiper";
-import "./countdown";
+import "./countdown/countdown";
 import "./marker";
 import "./inview";
