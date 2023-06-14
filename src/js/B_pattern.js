@@ -1,5 +1,8 @@
 import "../sass/style.scss";
-
-const date = new Date();
-const small = document.querySelector(".p-rule__copyright small");
-small.innerHTML = `Copyright &copy; ${date.getFullYear()} All rights reserved.`;
+import "./modernizr-custom";
+import "./lozad";
+import "./anime";
+import "./swiper";
+import "./countdown/countdown";
+import "./marker";
+import "./inview";
