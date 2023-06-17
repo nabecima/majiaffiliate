@@ -1,0 +1,63 @@
+@use "../global/" as *;
+
+.p-finished {
+  padding-top: 21.8rem;
+  padding-bottom: 16rem;
+
+  @include mq() {
+    @include pt_vw(246, 750);
+    @include pb_vw(211, 750);
+  }
+
+  > p {
+    margin-bottom: 4rem;
+    font-size: 4.056rem;
+    font-weight: bold;
+    letter-spacing: 0.04em;
+    line-height: calc(56.28px / 40.56px);
+    text-align: center;
+
+    @include mq() {
+      @include mb_vw(65, 750);
+      @include f_vw(60.79, 750);
+      line-height: calc(84.36px / 60.79px);
+    }
+  }
+
+  > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1.55rem;
+
+    > p {
+      font-size: 2.022rem;
+
+      > a {
+        color: #1967af;
+      }
+    }
+
+    > span {
+      font-size: 2.022rem;
+    }
+
+    @include mq() {
+      @include rowgap_vw(22, 750);
+
+      > p {
+        &:first-of-type {
+          @include f_vw(30.31, 750);
+        }
+
+        &:last-of-type {
+          @include f_vw(32.07, 750);
+        }
+      }
+
+      > span {
+        @include f_vw(30.31, 750);
+      }
+    }
+  }
+}
